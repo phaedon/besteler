@@ -1,6 +1,6 @@
 %{
   Notation common for Turkish Classical / Ottoman Usul notation.
-  
+
   by Adam Good, 2012
 %}
 
@@ -157,171 +157,171 @@ drumPitchNames =
    )
 
 midiDrumPitches = #`(
-	(acousticbassdrum . ,(ly:make-pitch -3 6 NATURAL))
-	(bassdrum . ,(ly:make-pitch -2 0 NATURAL))
-	(hisidestick . ,(ly:make-pitch -3 6 DOUBLE-SHARP))
-	(sidestick . ,(ly:make-pitch -2 0 SHARP))
-	(losidestick . ,(ly:make-pitch -2 1 FLAT))
-	(acousticsnare . ,(ly:make-pitch -2 1 NATURAL))
-	(snare . ,(ly:make-pitch -2 2 DOUBLE-FLAT))
-	(handclap . ,(ly:make-pitch -2 1 SHARP))
-	(electricsnare . ,(ly:make-pitch -2 2 NATURAL))
-	(lowfloortom . ,(ly:make-pitch -2 3 NATURAL))
-	(closedhihat . ,(ly:make-pitch -2 3 SHARP))
-	(hihat . ,(ly:make-pitch -2 4 FLAT))
-	(highfloortom . ,(ly:make-pitch -2 4 NATURAL))
-	(pedalhihat . ,(ly:make-pitch -2 4 SHARP))
-	(lowtom . ,(ly:make-pitch -2 5 NATURAL))
-	(openhihat . ,(ly:make-pitch -2 5 SHARP))
-	(halfopenhihat . ,(ly:make-pitch -2 5 SHARP))
-	(lowmidtom . ,(ly:make-pitch -2 6 NATURAL))
-	(himidtom . ,(ly:make-pitch -1 0 NATURAL))
-	(crashcymbala . ,(ly:make-pitch -1 0 SHARP))
-	(crashcymbal . ,(ly:make-pitch -1 1 FLAT))
-	(hightom . ,(ly:make-pitch -1 1 NATURAL))
-	(ridecymbala . ,(ly:make-pitch -1 1 SHARP))
-	(ridecymbal . ,(ly:make-pitch -1 2 FLAT))
-	(chinesecymbal . ,(ly:make-pitch -1 2 NATURAL))
-	(ridebell . ,(ly:make-pitch -1 3 NATURAL))
-	(tambourine . ,(ly:make-pitch -1 3 SHARP))
-	(splashcymbal . ,(ly:make-pitch -1 4 NATURAL))
-	(cowbell . ,(ly:make-pitch -1 4 SHARP))
-	(crashcymbalb . ,(ly:make-pitch -1 5 NATURAL))
-	(vibraslap . ,(ly:make-pitch -1 5 SHARP))
-	(ridecymbalb . ,(ly:make-pitch -1 6 NATURAL))
-	(mutehibongo . ,(ly:make-pitch -1 6 SHARP))
-	(hibongo . ,(ly:make-pitch 0 0 NATURAL))
-	(openhibongo . ,(ly:make-pitch 0 1 DOUBLE-FLAT))
-	(mutelobongo . ,(ly:make-pitch -1 6 DOUBLE-SHARP))
-	(lobongo . ,(ly:make-pitch 0 0 SHARP))
-	(openlobongo . ,(ly:make-pitch 0 1 FLAT))
-	(mutehiconga . ,(ly:make-pitch 0 1 NATURAL))
-	(muteloconga . ,(ly:make-pitch 0 2 DOUBLE-FLAT))
-	(openhiconga . ,(ly:make-pitch 0 1 SHARP))
-	(hiconga . ,(ly:make-pitch 0 2 FLAT))
-	(openloconga . ,(ly:make-pitch 0 1 DOUBLE-SHARP))
-	(loconga . ,(ly:make-pitch 0 2 NATURAL))
-	(hitimbale . ,(ly:make-pitch 0 3 NATURAL))
-	(lotimbale . ,(ly:make-pitch 0 3 SHARP))
-	(hiagogo . ,(ly:make-pitch 0 4 NATURAL))
-	(loagogo . ,(ly:make-pitch 0 4 SHARP))
-	(cabasa . ,(ly:make-pitch 0 5 NATURAL))
-	(maracas . ,(ly:make-pitch 0 5 SHARP))
-	(shortwhistle . ,(ly:make-pitch 0 6 NATURAL))
-	(longwhistle . ,(ly:make-pitch 1 0 NATURAL))
-	(shortguiro . ,(ly:make-pitch 1 0 SHARP))
-	(longguiro . ,(ly:make-pitch 1 1 NATURAL))
-	(guiro . ,(ly:make-pitch 1 0 DOUBLE-SHARP))
-	(claves . ,(ly:make-pitch 1 1 SHARP))
-	(hiwoodblock . ,(ly:make-pitch 1 2 NATURAL))
-	(lowoodblock . ,(ly:make-pitch 1 3 NATURAL))
-	(mutecuica . ,(ly:make-pitch 1 3 SHARP))
-	(opencuica . ,(ly:make-pitch 1 4 NATURAL))
-	(mutetriangle . ,(ly:make-pitch 1 4 SHARP))
-	(triangle . ,(ly:make-pitch 1 4 DOUBLE-SHARP))
-	(opentriangle . ,(ly:make-pitch 1 5 NATURAL))
-	
-	;; "transposing" pitches:
-	(oneup . ,(ly:make-pitch 0 1 NATURAL))
-	(twoup . ,(ly:make-pitch 0 2 NATURAL))
-	(threeup . ,(ly:make-pitch 0 3 NATURAL))
-	(fourup . ,(ly:make-pitch 0 4 NATURAL))
-	(fiveup . ,(ly:make-pitch 0 5 NATURAL))
-	(onedown . ,(ly:make-pitch -1 6 NATURAL))
-	(twodown . ,(ly:make-pitch -1 5 NATURAL))
-	(threedown . ,(ly:make-pitch -1 4 NATURAL))
-	(fourdown . ,(ly:make-pitch -1 3 NATURAL))
-	(fivedown . ,(ly:make-pitch -1 2 NATURAL))
-)
+                     (acousticbassdrum . ,(ly:make-pitch -3 6 NATURAL))
+                     (bassdrum . ,(ly:make-pitch -2 0 NATURAL))
+                     (hisidestick . ,(ly:make-pitch -3 6 DOUBLE-SHARP))
+                     (sidestick . ,(ly:make-pitch -2 0 SHARP))
+                     (losidestick . ,(ly:make-pitch -2 1 FLAT))
+                     (acousticsnare . ,(ly:make-pitch -2 1 NATURAL))
+                     (snare . ,(ly:make-pitch -2 2 DOUBLE-FLAT))
+                     (handclap . ,(ly:make-pitch -2 1 SHARP))
+                     (electricsnare . ,(ly:make-pitch -2 2 NATURAL))
+                     (lowfloortom . ,(ly:make-pitch -2 3 NATURAL))
+                     (closedhihat . ,(ly:make-pitch -2 3 SHARP))
+                     (hihat . ,(ly:make-pitch -2 4 FLAT))
+                     (highfloortom . ,(ly:make-pitch -2 4 NATURAL))
+                     (pedalhihat . ,(ly:make-pitch -2 4 SHARP))
+                     (lowtom . ,(ly:make-pitch -2 5 NATURAL))
+                     (openhihat . ,(ly:make-pitch -2 5 SHARP))
+                     (halfopenhihat . ,(ly:make-pitch -2 5 SHARP))
+                     (lowmidtom . ,(ly:make-pitch -2 6 NATURAL))
+                     (himidtom . ,(ly:make-pitch -1 0 NATURAL))
+                     (crashcymbala . ,(ly:make-pitch -1 0 SHARP))
+                     (crashcymbal . ,(ly:make-pitch -1 1 FLAT))
+                     (hightom . ,(ly:make-pitch -1 1 NATURAL))
+                     (ridecymbala . ,(ly:make-pitch -1 1 SHARP))
+                     (ridecymbal . ,(ly:make-pitch -1 2 FLAT))
+                     (chinesecymbal . ,(ly:make-pitch -1 2 NATURAL))
+                     (ridebell . ,(ly:make-pitch -1 3 NATURAL))
+                     (tambourine . ,(ly:make-pitch -1 3 SHARP))
+                     (splashcymbal . ,(ly:make-pitch -1 4 NATURAL))
+                     (cowbell . ,(ly:make-pitch -1 4 SHARP))
+                     (crashcymbalb . ,(ly:make-pitch -1 5 NATURAL))
+                     (vibraslap . ,(ly:make-pitch -1 5 SHARP))
+                     (ridecymbalb . ,(ly:make-pitch -1 6 NATURAL))
+                     (mutehibongo . ,(ly:make-pitch -1 6 SHARP))
+                     (hibongo . ,(ly:make-pitch 0 0 NATURAL))
+                     (openhibongo . ,(ly:make-pitch 0 1 DOUBLE-FLAT))
+                     (mutelobongo . ,(ly:make-pitch -1 6 DOUBLE-SHARP))
+                     (lobongo . ,(ly:make-pitch 0 0 SHARP))
+                     (openlobongo . ,(ly:make-pitch 0 1 FLAT))
+                     (mutehiconga . ,(ly:make-pitch 0 1 NATURAL))
+                     (muteloconga . ,(ly:make-pitch 0 2 DOUBLE-FLAT))
+                     (openhiconga . ,(ly:make-pitch 0 1 SHARP))
+                     (hiconga . ,(ly:make-pitch 0 2 FLAT))
+                     (openloconga . ,(ly:make-pitch 0 1 DOUBLE-SHARP))
+                     (loconga . ,(ly:make-pitch 0 2 NATURAL))
+                     (hitimbale . ,(ly:make-pitch 0 3 NATURAL))
+                     (lotimbale . ,(ly:make-pitch 0 3 SHARP))
+                     (hiagogo . ,(ly:make-pitch 0 4 NATURAL))
+                     (loagogo . ,(ly:make-pitch 0 4 SHARP))
+                     (cabasa . ,(ly:make-pitch 0 5 NATURAL))
+                     (maracas . ,(ly:make-pitch 0 5 SHARP))
+                     (shortwhistle . ,(ly:make-pitch 0 6 NATURAL))
+                     (longwhistle . ,(ly:make-pitch 1 0 NATURAL))
+                     (shortguiro . ,(ly:make-pitch 1 0 SHARP))
+                     (longguiro . ,(ly:make-pitch 1 1 NATURAL))
+                     (guiro . ,(ly:make-pitch 1 0 DOUBLE-SHARP))
+                     (claves . ,(ly:make-pitch 1 1 SHARP))
+                     (hiwoodblock . ,(ly:make-pitch 1 2 NATURAL))
+                     (lowoodblock . ,(ly:make-pitch 1 3 NATURAL))
+                     (mutecuica . ,(ly:make-pitch 1 3 SHARP))
+                     (opencuica . ,(ly:make-pitch 1 4 NATURAL))
+                     (mutetriangle . ,(ly:make-pitch 1 4 SHARP))
+                     (triangle . ,(ly:make-pitch 1 4 DOUBLE-SHARP))
+                     (opentriangle . ,(ly:make-pitch 1 5 NATURAL))
+
+                     ;; "transposing" pitches:
+                     (oneup . ,(ly:make-pitch 0 1 NATURAL))
+                     (twoup . ,(ly:make-pitch 0 2 NATURAL))
+                     (threeup . ,(ly:make-pitch 0 3 NATURAL))
+                     (fourup . ,(ly:make-pitch 0 4 NATURAL))
+                     (fiveup . ,(ly:make-pitch 0 5 NATURAL))
+                     (onedown . ,(ly:make-pitch -1 6 NATURAL))
+                     (twodown . ,(ly:make-pitch -1 5 NATURAL))
+                     (threedown . ,(ly:make-pitch -1 4 NATURAL))
+                     (fourdown . ,(ly:make-pitch -1 3 NATURAL))
+                     (fivedown . ,(ly:make-pitch -1 2 NATURAL))
+                     )
 
 
 #(map
   (lambda (k-v)
     (module-define! (current-module)
-		    (car k-v)
-		    (alist->hash-table (cdr k-v)))
+      (car k-v)
+      (alist->hash-table (cdr k-v)))
     )
-   '((drums-style .
-     (
-      (acousticbassdrum () #f -3)
-      (bassdrum () #f -3)
-      (sidestick cross #f 1)
-      (acousticsnare () #f 1)
-      (snare () #f 1)
-      (handclap triangle #f 1)
-      (electricsnare () #f 1)
-      (lowfloortom () #f -4)
-      (closedhihat cross "stopped" 3)
-      (hihat cross #f 3)
-      (highfloortom () #f -2)
-      (pedalhihat cross #f -5)
-      (lowtom () #f -1)
-      (openhihat cross "open" 3)
-      (halfopenhihat xcircle #f 3)
-      (lowmidtom () #f 0)
-      (himidtom () #f 2)
-      (crashcymbala xcircle #f 5)
-      (crashcymbal xcircle #f 5)
-      (hightom () #f 4)
-      (ridecymbala cross #f 5)
-      (ridecymbal cross #f 5)
-      (chinesecymbal mensural #f 5)
-      (ridebell () #f 5)
-      (splashcymbal diamond #f 5)
-      (cowbell triangle #f 5)
-      (crashcymbalb cross #f 5)
-      (vibraslap diamond #f 4)
-      (ridecymbalb cross #f 5)
-      ))
+  '((drums-style .
+      (
+       (acousticbassdrum () #f -3)
+       (bassdrum () #f -3)
+       (sidestick cross #f 1)
+       (acousticsnare () #f 1)
+       (snare () #f 1)
+       (handclap triangle #f 1)
+       (electricsnare () #f 1)
+       (lowfloortom () #f -4)
+       (closedhihat cross "stopped" 3)
+       (hihat cross #f 3)
+       (highfloortom () #f -2)
+       (pedalhihat cross #f -5)
+       (lowtom () #f -1)
+       (openhihat cross "open" 3)
+       (halfopenhihat xcircle #f 3)
+       (lowmidtom () #f 0)
+       (himidtom () #f 2)
+       (crashcymbala xcircle #f 5)
+       (crashcymbal xcircle #f 5)
+       (hightom () #f 4)
+       (ridecymbala cross #f 5)
+       (ridecymbal cross #f 5)
+       (chinesecymbal mensural #f 5)
+       (ridebell () #f 5)
+       (splashcymbal diamond #f 5)
+       (cowbell triangle #f 5)
+       (crashcymbalb cross #f 5)
+       (vibraslap diamond #f 4)
+       (ridecymbalb cross #f 5)
+       ))
 
-   (timbales-style .
-     ((losidestick cross #f -1)
-      (lotimbale () #f -1)
-      (cowbell triangle #f 2)
-      (hisidestick cross #f 1)
-      (hitimbale () #f 1)
-      ))
-
-
-   (congas-style .
-     ((losidestick cross #f -1)
-      (loconga () #f -1)
-      (openloconga () "open" -1)
-      (muteloconga () "stopped" -1)
-      (hisidestick cross #f 1)
-      (hiconga () #f 1)
-      (openhiconga () "open" 1)
-      (mutehiconga () "stopped" 1)
-      ))
+    (timbales-style .
+      ((losidestick cross #f -1)
+       (lotimbale () #f -1)
+       (cowbell triangle #f 2)
+       (hisidestick cross #f 1)
+       (hitimbale () #f 1)
+       ))
 
 
-   (bongos-style .
-     ((losidestick cross #f -1)
-      (lobongo () #f -1)
-      (openlobongo () "open" -1)
-      (mutelobongo () "stopped" -1)
-      (hisidestick cross #f 1)
-      (hibongo () #f 1)
-      (openhibongo () "open" 1)
-      (mutehibongo () "stopped" 1)
-      ))
+    (congas-style .
+      ((losidestick cross #f -1)
+       (loconga () #f -1)
+       (openloconga () "open" -1)
+       (muteloconga () "stopped" -1)
+       (hisidestick cross #f 1)
+       (hiconga () #f 1)
+       (openhiconga () "open" 1)
+       (mutehiconga () "stopped" 1)
+       ))
 
 
-   (percussion-style .
-     ((opentriangle cross "open" 0)
-      (mutetriangle cross "stopped" 0)
-      (triangle cross #f 0)
-      (shortguiro () staccato 0)
-      (longguiro () tenuto 0)
-      (guiro () #f 0)
-      (cowbell triangle #f 0)
-      (claves () #f 0)
-      (tambourine () #f 0)
-      (cabasa cross #f 0)
-      (maracas () #f 0)
-      (handclap () #f 0)
-      ))
-   ))
+    (bongos-style .
+      ((losidestick cross #f -1)
+       (lobongo () #f -1)
+       (openlobongo () "open" -1)
+       (mutelobongo () "stopped" -1)
+       (hisidestick cross #f 1)
+       (hibongo () #f 1)
+       (openhibongo () "open" 1)
+       (mutehibongo () "stopped" 1)
+       ))
+
+
+    (percussion-style .
+      ((opentriangle cross "open" 0)
+       (mutetriangle cross "stopped" 0)
+       (triangle cross #f 0)
+       (shortguiro () staccato 0)
+       (longguiro () tenuto 0)
+       (guiro () #f 0)
+       (cowbell triangle #f 0)
+       (claves () #f 0)
+       (tambourine () #f 0)
+       (cabasa cross #f 0)
+       (maracas () #f 0)
+       (handclap () #f 0)
+       ))
+    ))
 
 % These lines define the position of the kudum drums in the stave;
 % if you like, you can change it or you can use special note heads
@@ -330,26 +330,26 @@ midiDrumPitches = #`(
                    (loconga default #t 5)))
 
 kudumstaff = {
-  
+
   % This defines a staff with only two lines.
   % It also defines the positions of the two lines.
   \override Staff.StaffSymbol #'line-positions = #'(5 -5)
 
   % This is neccessary; if not entered, the barline would be too short!
   \override Staff.BarLine #'bar-size = #3
-  
+
   \autoBeamOff
-  
+
   \override Stem #'length = #7.40
   \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
-  
-    \override Staff.TimeSignature #'break-visibility = #end-of-line-invisible
 
-      \override Score.VoltaBracket #'font-name = #"New Century Schoolbook"
+  \override Staff.TimeSignature #'break-visibility = #end-of-line-invisible
+
+  \override Score.VoltaBracket #'font-name = #"New Century Schoolbook"
   \override Score.VoltaBracket #'font-size = #-2.0
   \override BreathingSign  #'Y-offset = #3
   \override NoteHead #'font-size = #-1
-  
+
   \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \override Score.RehearsalMark #'X-offset = #0
   \override Score.RehearsalMark #'extra-spacing-height = #'(3 . 3)
@@ -363,185 +363,213 @@ kudumstaff = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% BEAMING
-Aksakbeams = { % BEAMING FOR 9/8
+Aksakbeams = {
+  % BEAMING FOR 9/8
   \set Timing.beatStructure = #'(2 2 2 3)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-AksakSemaibeams = { % BEAMING FOR 10/8
+AksakSemaibeams = {
+  % BEAMING FOR 10/8
   \set Timing.beatStructure = #'(2 1 2 2 2 1)
 }
 
-ayindevrirevanibeams = { % BEAMING FOR 14/8
+ayindevrirevanibeams = {
+  % BEAMING FOR 14/8
   \set Timing.beatStructure = #'(2 1 2 2 2 1 2 2)
 }
 
-curcunabeams = { % BEAMING FOR 10/8
+curcunabeams = {
+  % BEAMING FOR 10/8
   \set Timing.beatStructure = #'(3 2 2 3)
 }
 
-curcunasixteenbeams = { % BEAMING FOR 10/16 CURCUNA
+curcunasixteenbeams = {
+  % BEAMING FOR 10/16 CURCUNA
   \set Timing.beatStructure = #'(3 2 2 3)
 }
 
-devrihindibeams = { % BEAMING FOR 7/8 DEVRI HINDI
+devrihindibeams = {
+  % BEAMING FOR 7/8 DEVRI HINDI
   \set Timing.beatStructure = #'(2 1 2 2)
 }
 
-devrituranbeams = { % BEAMING FOR 7/8 DEVRI TURAN
+devrituranbeams = {
+  % BEAMING FOR 7/8 DEVRI TURAN
   \set Timing.beatStructure = #'(2 2 2 1)
 }
 
-duyekbeams = { % BEAMING FOR 8/8
+duyekbeams = {
+  % BEAMING FOR 8/8
   \set Timing.beatStructure = #'(2 2 2 2)
 }
 
-evsatbeams = { % BEAMING FOR EVSAT USUL...the 5/8 needs this
+evsatbeams = {
+  % BEAMING FOR EVSAT USUL...the 5/8 needs this
   \set Timing.beatStructure = #'(2 2 1)
 }
 
-longbarbeams = { % BEAMING FOR NIMBEREFSAN USUL
+longbarbeams = {
+  % BEAMING FOR NIMBEREFSAN USUL
   \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-nimberefsanbeams = { % BEAMING FOR NIMBEREFSAN USUL
+nimberefsanbeams = {
+  % BEAMING FOR NIMBEREFSAN USUL
   \set Timing.beatStructure = #'(2 2)
 }
 
-semaibeams = { % BEAMING FOR 3/4
+semaibeams = {
+  % BEAMING FOR 3/4
   \set Timing.beatStructure = #'(1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-SixTwobeams = { % BEAMING FOR 6/2
+SixTwobeams = {
+  % BEAMING FOR 6/2
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-SenginSemaibeams = { % BEAMING FOR 6/4
+SenginSemaibeams = {
+  % BEAMING FOR 6/4
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
+  %{ \set Timing.beamExceptions =
+  #'(;start of alist
+  (end . ;entry for end of beams
+  ( ;start of alist of end points
+  ((1 . 16) . (4 4 4 4 4 4)) ;rule for 1/32 beams -- end each 1/16
+  ))) %close all entries %}
 }
 
-SenginSemaiEightbeams = { % BEAMING FOR sengin semai 6/8
+SenginSemaiEightbeams = {
+  % BEAMING FOR sengin semai 6/8
   \set Timing.beatStructure = #'(2 1 1 2)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 16) . (2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-sofyanbeams = { % BEAMING FOR 4/4
+sofyanbeams = {
+  % BEAMING FOR 4/4
   \set Timing.beatStructure = #'(1 1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-SixteenTwobeams = { % BEAMING FOR 16/2
+SixteenTwobeams = {
+  % BEAMING FOR 16/2
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-cifteduyekbeams = { % BEAMING FOR 16/4
+cifteduyekbeams = {
+  % BEAMING FOR 16/4
   \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
 }
 
-turkaksagibeams = { % BEAMING FOR 5/8
+turkaksagibeams = {
+  % BEAMING FOR 5/8
   \set Timing.beatStructure = #'(2 2 1)
 }
 
-YurukSemaibeams = { % BEAMING FOR 6/8
+YurukSemaibeams = {
+  % BEAMING FOR 6/8
   \set Timing.beatStructure = #'(3 3)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 16) . (4 2 4 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 2 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-zeybekbeams = { % BEAMING FOR 9/8 ZEYBEK
+zeybekbeams = {
+  % BEAMING FOR 9/8 ZEYBEK
   \set Timing.beatStructure = #'(2 2 2 2 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
-oynakbeams = { % BEAMING FOR 9/8 ZEYBEK
+oynakbeams = {
+  % BEAMING FOR 9/8 ZEYBEK
   \set Timing.beatStructure = #'(2 1 2 2 2 )
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 16) . (4 2 4 4 4 ))   ;rule for 1/32 beams -- end each 1/16
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 2 4 4 4 ))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
 }
 
 %% NIBAR
 increaseBarNumber = \applyContext
 #(lambda (x)
-	(let ((measurepos (ly:context-property x 'measurePosition)))
-	     (if (< 0 (ly:moment-main-numerator measurepos))
-		 (begin
-		   (ly:context-set-property!
-		     (ly:context-property-where-defined x 'internalBarNumber)
-		     'internalBarNumber
-		     (1+ (ly:context-property x 'internalBarNumber)))
-		   (ly:context-set-property!
-		     (ly:context-property-where-defined x 'currentBarNumber)
-		     'currentBarNumber
-		     (1+ (ly:context-property x 'currentBarNumber)))
-		   (ly:context-set-property!
-		     (ly:context-property-where-defined x 'measurePosition)
-		     'measurePosition
-		     (ly:make-moment 0 1
-		       (ly:moment-grace-numerator measurepos)
-		       (ly:moment-grace-denominator measurepos)))))))
+   (let ((measurepos (ly:context-property x 'measurePosition)))
+     (if (< 0 (ly:moment-main-numerator measurepos))
+         (begin
+          (ly:context-set-property!
+           (ly:context-property-where-defined x 'internalBarNumber)
+           'internalBarNumber
+           (1+ (ly:context-property x 'internalBarNumber)))
+          (ly:context-set-property!
+           (ly:context-property-where-defined x 'currentBarNumber)
+           'currentBarNumber
+           (1+ (ly:context-property x 'currentBarNumber)))
+          (ly:context-set-property!
+           (ly:context-property-where-defined x 'measurePosition)
+           'measurePosition
+           (ly:make-moment 0 1
+             (ly:moment-grace-numerator measurepos)
+             (ly:moment-grace-denominator measurepos)))))))
 
 
 nibar = #(define-music-function (parser location x) (string?)
-  #{
-    \bar $x
-    \increaseBarNumber
-#})
+           #{
+             \bar $x
+             \increaseBarNumber
+           #})
 
 %% SOME THINGS FOR MAKING USUL NOTATION
 #(define mydrums '((ridebell default #t  3)
-   (cowbell  default #t -3)))
+                   (cowbell  default #t -3)))
 
 bellstaff = {
   \override DrumStaff.StaffSymbol #'line-positions = #'(-3 3.2)
@@ -559,7 +587,8 @@ usulnotation = {
   \override Staff.TimeSignature #'break-visibility = #end-of-line-invisible
   \override Score.Clef #'stencil = ##f
   \autoBeamOff
-  \clef percussion }
+  \clef percussion
+}
 
 %% DUM'S AND TEK'S
 DUM="düm"
@@ -587,9 +616,10 @@ KA="kâ"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% BEGIN USUL DEFINITIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-UsulClef =  { \clef percussion
-    \autoBeamOff
-    %\override TextScript #'Y-extent = #'(-1.5 . 1.5)
+UsulClef =  {
+  \clef percussion
+  \autoBeamOff
+  %\override TextScript #'Y-extent = #'(-1.5 . 1.5)
 }
 
 %%%%%%%%%%% agirAksak %%%%%%%%%%%%%
@@ -602,17 +632,17 @@ agirAksakPatternMidi = { b4 d8 d d4 d b8 d b4 d2 d8 d }
 agirAksakPattern = {
   \drummode {
     \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TEK 
+    \stemUp kdl2^\DUM \stemDown kdh2_\TEK
     \stemDown kdh4_\TEK
-}
+  }
 }
 
 agirAksakPatternVelOne = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK 
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK
     \stemDown kdh4_\TEK
-}
+  }
 }
 
 %%%%%%%%%%% agirduyek %%%%%%%%%%%%%
@@ -637,7 +667,7 @@ agirduyekPattern = {
 %%%%%%%%%%% agirsakil %%%%%%%%%%%%%
 agirsakil = {\time 48/2 \longbarbeams}
 
-agirsakilbars = { 
+agirsakilbars = {
   s4*8 \nibar "dashed"
   s4*12 \nibar "dashed"
   s4*8 \nibar "dashed"
@@ -684,14 +714,14 @@ AksakSemaiPattern = {
   \drummode {
     \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK
-}
+  }
 }
 
 AksakSemaiPatternVel = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA kdh8_\TE kdh_\KE \bar "dashed"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK kdh8_\TE kdh_\KE
-}
+  }
 }
 
 %%%%%%%%%%% ayindevrirevani %%%%%%%%%%%%%
@@ -764,7 +794,7 @@ berefsanPattern = {
     \stemUp kdl2^\DUM kdl2^\TEK \bar "dashed"
     \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "dashed"
     \stemUp kdl4^\TEK \stemDown kdh4_\KA \stemUp kdl4^\TEK \stemDown kdh4_\KA
-}
+  }
 }
 
 berefsanPatternVel = {
@@ -776,7 +806,7 @@ berefsanPatternVel = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 %%%%%%%%%%% nimberefsan %%%%%%%%%%%%%
@@ -881,7 +911,7 @@ cenberPattern = {
     \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK \bar "dashed" \break
     \stemUp kdl2^\DUM \stemDown kdh_\TA \stemDown <kdh kdl>2_\HEK \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 cenberPatternVel = {
@@ -891,7 +921,7 @@ cenberPatternVel = {
     \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 cenbertwo = {\time 24/2 \SixTwobeams}
@@ -923,14 +953,15 @@ agircenberPattern = {
   \time 24/4
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \bar "|"
-  
+
   \stemUp d4^\DUM \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemUp d4^\DUM \bar "|"
-  
+
   \stemDown  b4_\TEK \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|"
-  
+
   \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemDown b4_\TEK \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA
-  
-  \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|" }
+
+  \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|"
+}
 
 %%%%%%%%%%% cenberagir 12/4%%%%%%%%%%%%%
 cenberagir = {\time 12/4 \SenginSemaibeams}
@@ -957,14 +988,15 @@ cenberagirPattern = {
   \time 24/4
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \bar "|"
-  
+
   \stemUp d4^\DUM \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemUp d4^\DUM \bar "|"
-  
+
   \stemDown  b4_\TEK \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|"
-  
+
   \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemDown b4_\TEK \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA
-  
-  \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|" }
+
+  \stemDown b4_\TEK \stemDown b_\KA \stemDown b4_\TEK \stemDown b_\KA \bar "|"
+}
 
 %%%%%%%%%%% cifteduyek %%%%%%%%%%%%%
 cifteduyek = { \time 16/4 \cifteduyekbeams }
@@ -992,7 +1024,7 @@ cifteduyekPattern = {
   \drummode {
     \stemUp kdl2^\DUM \stemDown kdh1_\TEK kdh2_\TEK \bar "dashed"
     \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE
-}
+  }
 }
 
 cifteduyekPatternVel = {
@@ -1000,8 +1032,8 @@ cifteduyekPatternVel = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
     \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl4^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE kdh4_\TEK \stemDown kdh_\KA
   }
-  }
-  
+}
+
 %%%%%%%%%%% curcuna %%%%%%%%%%%%%
 curcuna = { \time 10/8 \curcunabeams }
 
@@ -1026,7 +1058,8 @@ curcunasixteenPattern = {
   \time 10/16
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d8^\DUM \stemDown d16^"te" b8_\KA \bar "|"
-  \stemUp d8^\DUM \stemDown b8_\TEK \stemDown b16_\TEK \bar "|" }
+  \stemUp d8^\DUM \stemDown b8_\TEK \stemDown b16_\TEK \bar "|"
+}
 
 curcunasixteenPatternMidi = { \stemUp b8 b16 \stemDown d8 \stemUp b8 \stemDown d8 d16 }
 
@@ -1035,10 +1068,10 @@ devrikebir = { \time 28/4 \SenginSemaibeams}
 
 devrikebirbars = {
   s1. \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1 \nibar "dashed"
   s1. \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1 \nibar "|"
 }
 
@@ -1061,7 +1094,7 @@ devrikebirPatternOne = {
     \stemDown kdh2_\TEK \stemUp kdl2^\DUM kdl2^\DUM  \bar "dashed"
     \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 devrikebirPatternTwo = {
@@ -1072,7 +1105,7 @@ devrikebirPatternTwo = {
     \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "dashed"
     \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 devrikebirPatternThree = {
@@ -1083,7 +1116,7 @@ devrikebirPatternThree = {
     \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "dashed"
     \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 devrikebirPatternVel = {
@@ -1094,11 +1127,12 @@ devrikebirPatternVel = {
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-}
+  }
 }
 
 %%%%%%%%%%% devrikebirfourteen 14/4 %%%%%%%%%%%%%
-devrikebirfourteen = { \time 14/4 %\SenginSemaibeams
+devrikebirfourteen = {
+  \time 14/4 %\SenginSemaibeams
 }
 
 devrikebirfourteenbars = {
@@ -1139,10 +1173,10 @@ muzaafdevrikebir = { \time 28/4 \sofyanbeams }
 muzaafdevrikebirbars = {
   s1 \nibar "dashed"
   s1 \nibar "dashed"
-  s1 \nibar "dashed" 
   s1 \nibar "dashed"
   s1 \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
+  s1 \nibar "dashed"
   s1 \nibar "|"
 }
 
@@ -1165,7 +1199,7 @@ muzaafdevrikebirPattern = {
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    
+
     \stemDown <kdl kdh>4_\HEK kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA kdh8_\TE kdh8_\KE kdh4_\TEK \bar "dashed"
     kdh4_\KA kdh8_\TE kdh8_\KE \stemUp kdl4^\DU \stemDown kdh_\ME \bar "dashed"
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
@@ -1173,8 +1207,8 @@ muzaafdevrikebirPattern = {
     \stemDown kdh4_\TEK \stemDown kdh_\KA
     \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "dashed"
     \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA  \bar "dashed" }
-  
-}
+
+  }
 }
 
 %%%%%%%%%%% devrihindi %%%%%%%%%%%%%
@@ -1199,10 +1233,10 @@ devrirevan = { \time 26/4 \SenginSemaibeams}
 
 devrirevanbars = {
   s4*5 \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1 \nibar "dashed"
   s4*5 \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1 \nibar "|"
 }
 
@@ -1232,7 +1266,7 @@ devrituranPatternMidi = { b8 d d b8 d d d }
 devrituranPattern = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh4._\TEK
-}
+  }
 }
 
 SdevrituranPattern = {
@@ -1254,7 +1288,7 @@ duyekPatternMidi = {  b8  d16  d  d16  d  b16  d  b8  d  d16  d }
 duyekPattern = {
   \drummode {
     \stemUp kdl8^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK \stemUp kdl4^\DUM \stemDown kdh4_\TEK
-}
+  }
 }
 
 duyekPatternVel = {
@@ -1262,16 +1296,16 @@ duyekPatternVel = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA
     \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl4^\DUM \stemDown kdh4_\HEK \stemDown kdh8_\TE kdh8_\KE
   }
-  }
+}
 
 %%%%%%%%%%% evsat %%%%%%%%%%%%%
 evsat = {\time 26/8 \evsatbeams }
 
 evsatbars = {
-  s8*5 \nibar "dashed" 
+  s8*5 \nibar "dashed"
   s2 \nibar "dashed"
   s2 \nibar "dashed"
-  s8*5 \nibar "dashed" 
+  s8*5 \nibar "dashed"
   s2 \nibar "dashed"
   s2 \nibar "|"
 }
@@ -1296,14 +1330,14 @@ evsatPattern = {
 fahte = {\time 20/4 \SenginSemaibeams }
 
 fahtebars = {
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
   s1. \nibar "dashed"
   s1 \nibar "|"
 }
 
 fahtebarsBREAKS = {
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s2. \nibar ""
   s2. \nibar "dashed"
   s2. \nibar ""
@@ -1345,7 +1379,7 @@ fahtePatternVelTwo = {
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
     \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
     \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
-    
+
   }
 }
 
@@ -1355,21 +1389,21 @@ agirfahte = {
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
-    (end .                   ;entry for end of beams
-      (                       ;start of alist of end points
-	((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2))   ;
-  )))                     %close all entries
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2))   ;
+                                                        )))                     %close all entries
 }
 
 agirfahtebars = {
-  s1*2 \nibar "dashed" 
+  s1*2 \nibar "dashed"
   s1.*2 \nibar "dashed"
   s1.*2 \nibar "dashed"
   s1*2 \nibar "|"
 }
 
 agirfahtebarsBREAKS = {
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s2. \nibar ""
   s2. \nibar "dashed"
   s2. \nibar ""
@@ -1451,7 +1485,7 @@ haviPattern = {
   \stemUp d2^\DUM \stemDown b_\TEK \bar "|"
   \stemUp d^\DUM \stemUp d^\DUM \bar "|"
   \stemUp d4^\TE \stemDown b_\KE \stemUp d^\TE \stemDown b_\KE \bar "|"
-  
+
   \stemUp d2^\DUM \stemUp d4^\TE \stemDown b_\KE \bar "|"
   \stemUp d^\DUM \stemUp d^\DUM \stemDown b2 \bar "|"
   \stemUp d4^\TE \stemDown b_\KE \stemUp d2^\DUM \bar "|"
@@ -1459,7 +1493,8 @@ haviPattern = {
   \stemUp d^\DUM \stemDown b_\TEK \stemDown b2_\TEK \bar "|"
   \stemUp d4^\DUM \stemDown b_\TEK \stemDown b2_\TEK \bar "|"
   \stemUp d4^\DUM \stemDown b_\TEK \stemUp d^\DUM \stemUp d^\DUM \bar "|"
-  \stemDown b2_\TEK \stemUp d4^\TE \stemDown b_\KE \bar "|" }
+  \stemDown b2_\TEK \stemUp d4^\TE \stemDown b_\KE \bar "|"
+}
 
 %%%%%%%%%%% karsilama %%%%%%%%%%%%%
 karsilama = {\time 9/8 \zeybekbeams }
@@ -1471,7 +1506,8 @@ karsilamaPattern = {
   \time 9/8
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
-  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|" }
+  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
+}
 
 
 %%%%%%%%%%% oynak %%%%%%%%%%%%%
@@ -1484,7 +1520,8 @@ oynakPattern = {
   \time 9/8
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
-  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|" }
+  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
+}
 
 %%%%%%%%%%% muhammes %%%%%%%%%%%%%
 muhammes = {\time 32/4 \sofyanbeams}
@@ -1497,31 +1534,31 @@ muhammesPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d 
 
 
 muhammesPattern = {
-  \drummode {          
-      \stemUp kdl2^\DUM kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
-      \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-      \stemUp kdl2^\DUM kdl^\DUM\bar "dashed"
-      \stemDown kdh_\TEK \stemUp kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
-      \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-      \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl2^\DUM \bar "dashed"
-      
-      \stemUp kdl2^\TA \stemDown kdh2_\HEK \bar "dashed"
-      
-      kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA    
-}
+  \drummode {
+    \stemUp kdl2^\DUM kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
+    \stemUp kdl2^\DUM kdl^\DUM\bar "dashed"
+    \stemDown kdh_\TEK \stemUp kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
+    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl2^\DUM \bar "dashed"
+
+    \stemUp kdl2^\TA \stemDown kdh2_\HEK \bar "dashed"
+
+    kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
+  }
 }
 
 muhammesPatternVel = {
   \drummode {
-      \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE \bar "dashed" kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA \bar "dashed"
-      
-      \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \bar "dashed"
-      kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA \bar "dashed" \break
-      kdh2_\HEK kdh_\HEK \bar "dashed" kdh4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA \bar "dashed"
-      \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME
-      \repeat unfold 2 {kdh8_\TE kdh8_\KE} \bar "dashed"
-      kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA
-}
+    \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE \bar "dashed" kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA \bar "dashed"
+
+    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \bar "dashed"
+    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA \bar "dashed" \break
+    kdh2_\HEK kdh_\HEK \bar "dashed" kdh4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA \bar "dashed"
+    \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME
+    \repeat unfold 2 {kdh8_\TE kdh8_\KE} \bar "dashed"
+    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA
+  }
 }
 
 %%%%%%%%%%% muhammessixteentwo %%%%%%%%%%%%%
@@ -1539,13 +1576,13 @@ muhammessixteentwoPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    
+
     \repeat unfold 4 {
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
@@ -1570,13 +1607,13 @@ muhammessixteenfourPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    
+
     \repeat unfold 4 {
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
@@ -1590,7 +1627,7 @@ muhammessixteenfourPattern = {
 nimsakil = {\time 24/4 \SenginSemaibeams}
 
 nimsakilbars = {
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
   s1. \nibar "dashed"
   s1 \nibar "dashed"
@@ -1639,13 +1676,13 @@ remelPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    
+
     \repeat unfold 4 {
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
@@ -1658,10 +1695,11 @@ remelPattern = {
 %%%%%%%%%%% remelfour %%%%%%%%%%%%%
 remelfour = {\time 28/4 \SenginSemaibeams}
 
-remelfourbars = { % 4 6 4 6 4 4
-  s1 \nibar "dashed" 
+remelfourbars = {
+  % 4 6 4 6 4 4
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
   s1 \nibar "dashed"
   s1 \nibar "|"
@@ -1675,13 +1713,13 @@ remelfourPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    
+
     \repeat unfold 4 {
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
-      
+
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
@@ -1694,10 +1732,11 @@ remelfourPattern = {
 %%%%%%%%%%% sakil %%%%%%%%%%%%%
 sakil = {\time 48/4 \SenginSemaibeams}
 
-sakilbars = { % 4 6 4 6 6 6 4 4 4 4
-  s1 \nibar "dashed" 
+sakilbars = {
+  % 4 6 4 6 6 6 4 4 4 4
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
-  s1 \nibar "dashed" 
+  s1 \nibar "dashed"
   s1. \nibar "dashed"
   s1. \nibar "dashed"
   s1. \nibar "dashed"
@@ -1740,7 +1779,7 @@ semaiPattern = {
     \autoBeamOff
     \time 3/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    
+
     \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh_\TEK
     \bar "|"
   }
@@ -1793,7 +1832,7 @@ sofyanPattern = {
     \numericTimeSignature
     \time 4/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE 
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE
     \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1813,7 +1852,7 @@ turkaksagiPattern = {
     \numericTimeSignature
     \time 5/8
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh8_\TEK 
+    \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh8_\TEK
     \bar "|"
   }
 }
@@ -1837,23 +1876,25 @@ YurukSemaiPattern = {
 }
 
 %%%%%%%%%%% zencir %%%%%%%%%%%%%
-zencir = { \time 120/4 \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
+zencir = {
+  \time 120/4 \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
 }
 
-zencirPatternMidi = { 
+zencirPatternMidi = {
   \cifteduyekPatternMidi
   \fahtePatternMidi
   \cenberPatternMidi
   \devrikebirPatternMidi
-  \berefsanPatternMidi }
+  \berefsanPatternMidi
+}
 
 zencirPatternVel = {
   \drummode {
-  \cifteduyekPatternVel
-  \fahtePatternVelOne
-  \cenberPatternVel
-  \devrikebirPatternVel
-  \berefsanPatternVel
+    \cifteduyekPatternVel
+    \fahtePatternVelOne
+    \cenberPatternVel
+    \devrikebirPatternVel
+    \berefsanPatternVel
   }
 }
 
@@ -1867,7 +1908,8 @@ zeybekPattern = {
   \time 9/8
   \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
-  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|" }
+  \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
+}
 
 agirzeybek = {\time 9/4 \zeybekbeams }
 
@@ -1875,23 +1917,24 @@ agirzeybek = {\time 9/4 \zeybekbeams }
 darbeyn = { \SixTwobeams }
 
 darbeynbars = {
-  \time 28/2 
+  \time 28/2
   \SixTwobeams
   \remelbars
   \remelbars
   \time 32/4 \muhammesbars
 }
 
-darbeynPatternMidi = { 
+darbeynPatternMidi = {
   \cifteduyekPatternMidi
   \fahtePatternMidi
   \cenberPatternMidi
   \devrikebirPatternMidi
-  \berefsanPatternMidi }
+  \berefsanPatternMidi
+}
 
 \layout {
-ragged-right=##f
-\context { \Score \remove "Bar_number_engraver" }
+  ragged-right=##f
+  \context { \Score \remove "Bar_number_engraver" }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
