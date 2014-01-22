@@ -51,7 +51,7 @@ hanefour = \relative c' {
   }
 
   \alternative {
-    {  c,16 d efk g f efk d c \times 2/3 {bfk16 c d} \times 2/3 {efk16 d c} bfk16 afk afk g g8 f g afc }
+    {  c,16 d efk g f efk d c \times 2/3 {bfk16 [c d]} \times 2/3 {efk16 d c} bfk16 afk afk g g8 f g afc }
     {  efk'16 d c d c4 g'8 d efc16 f efc f g4 r4-\MyRehearse #'(-6.0 . -2.0) "D.S. al fine"}
   }
 
