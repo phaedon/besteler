@@ -237,6 +237,16 @@ CustomSegno = #(define-music-function (parser location markp marktext) (string? 
       \hspace #0.2 \raise #-1.5 $markp \hspace #0.2 \raise #-1.5 $marktext }
 #})
 
+CustomSegnoBox = #(define-music-function (parser location markp marktext) (string? string?) 
+  #{ 
+    \once \override Score.RehearsalMark #'break-align-symbols = #'(clef)
+    \once \override Score.RehearsalMark #'X-offset = #2.0
+    \once \override Score.RehearsalMark #'Y-offset = #1.0
+    \once \override Score.RehearsalMark #'font-size = #'0.0
+    \mark \markup {\normalsize \musicglyph #"scripts.segno"
+      \hspace #0.2 \raise #-1.5 \bold \box $markp \hspace #0.2 \raise #-1.5 $marktext }
+#})
+
 % Function to print a break after a specific number of beats
 breakafter = #(define-music-function (parser location count beats) (integer? ly:music?)
   #{
