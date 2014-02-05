@@ -1,7 +1,7 @@
 \version "2.12.3"
 
 \include "makam.ly"
-\include "../../aaa-makam-inits/makam-includes.ly"
+\include "makam-includes.ly"
 
 %%%%%%%%%%%%%%%%%%%% Score %%%%%%%%%%%%%%%%%%%%
 
@@ -143,7 +143,7 @@ UsulFormMidi = {
       \new Voice = "TheBreaks" { \TheBreaks }
       \new Voice = "MelodyForm" {
         \transpose g g
-        \relative { \StaffOverides \MelodyForm \signature }
+        \relative { \StaffOverides \MelodyForm }
       }
       \LyricsOne \LyricsTwo \LyricsThree
     >>
