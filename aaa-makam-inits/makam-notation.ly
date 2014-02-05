@@ -395,30 +395,5 @@ breakSectionOn={\break}
 breakSectionOff={}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% MAKE SIGNATURE BEGIN
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-emptysig={}
-
-apgsigtweak= { 
-  \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-  %\once \override Score.RehearsalMark #'extra-offset = #'(2.3 . -4.7)
-  \mark \markup { \rotate #90.0 {
-      \with-color #(x11-color 'white)
-      \combine \filled-box #'(-.3 . 4.0) #'(-.3 . 3.9) #0 \with-color #black \raise #0.9  \fontsize #-4.0 APG}} 
-  \hideNotes d64 }
-
-Signature = #(define-music-function (parser location markp) (string?) 
-  #{ 
-    \stopStaff
-    \once \override Score.RehearsalMark #'extra-offset = #'(2.6 . -4.7)
-    \once \override Score.TimeSignature #'stencil = ##f
-    \time 1/64
-    \mark \markup { \rotate #90.0 { \raise #0.0 \fontsize #-4.0 $markp } } 
-    \hideNotes d64
-#})
-
-signature={\emptysig}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% END
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

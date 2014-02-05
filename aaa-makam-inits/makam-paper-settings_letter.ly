@@ -22,6 +22,12 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
 %% Paper Defs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\layout {
+  ragged-right=##f
+  %\context { \Score \remove "Bar_number_engraver" } 
+  \context { \Lyrics \override LyricText #'font-size = #-0.5 }
+}
+
 \paper {
   #(define fonts (make-pango-font-tree
                   "Times New Roman"
@@ -34,20 +40,20 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
   #(set-paper-size "letter")
 
   %{
-  %line-width = 184.15\mm
-  line-width = 188.00\mm %for Letter
-  %paper-width = 184.15\mm
-  paper-width = 188.00\mm %for Letter
-  %paper-height =  224\mm %for Letter
-  paper-height =  260\mm
+    %line-width = 184.15\mm
+    line-width = 188.00\mm %for Letter
+    %paper-width = 184.15\mm
+    paper-width = 188.00\mm %for Letter
+    %paper-height =  224\mm %for Letter
+    paper-height =  260\mm
 
-  top-margin = 0\mm
-  page-top-space = 0\mm
-  before-title-space = 0\mm
-  left-margin = 0.0\mm
-  right-margin = 0.0\mm
-  head-separation = 4\mm %default is 4\mm
-  foot-separation = 0\mm %default is 4\mm
+    top-margin = 0\mm
+    page-top-space = 0\mm
+    before-title-space = 0\mm
+    left-margin = 0.0\mm
+    right-margin = 0.0\mm
+    head-separation = 4\mm %default is 4\mm
+    foot-separation = 0\mm %default is 4\mm
   %}
 
   oddFooterMarkup=##f
@@ -98,16 +104,16 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
   }
 
   bookTitleMarkupX =\markup {
-  \fill-line {
-    \line { William S. Gilbert }
-    \center-column {
-      \huge \smallCaps "The Mikado"
-      or
-      \smallCaps "The Town of Titipu"
+    \fill-line {
+      \line { William S. Gilbert }
+      \center-column {
+        \huge \smallCaps "The Mikado"
+        or
+        \smallCaps "The Town of Titipu"
+      }
+      \line { Sir Arthur Sullivan }
     }
-    \line { Sir Arthur Sullivan }
   }
-}
 
 
 

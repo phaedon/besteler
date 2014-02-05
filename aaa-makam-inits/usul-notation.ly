@@ -631,7 +631,7 @@ agirAksakPatternMidi = { b4 d8 d d4 d b8 d b4 d2 d8 d }
 
 agirAksakPattern = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "!"
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK
     \stemDown kdh4_\TEK
   }
@@ -639,7 +639,7 @@ agirAksakPattern = {
 
 agirAksakPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK
     \stemDown kdh4_\TEK
   }
@@ -648,7 +648,7 @@ agirAksakPatternVelOne = {
 %%%%%%%%%%% agirduyek %%%%%%%%%%%%%
 agirduyek = {\time 8/4 }
 
-agirduyekbars = { s1 \nibar "dashed" s1 \nibar "|" }
+agirduyekbars = { s1 \nibar "!" s1 \nibar "|" }
 
 agirduyekPatternMidi = { b4 d8 d d4 d b8 d b4 d d8 d }
 
@@ -658,7 +658,7 @@ agirduyekPattern = {
     \autoBeamOff
     \time 8/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE
     \bar "|"
   }
@@ -668,15 +668,15 @@ agirduyekPattern = {
 agirsakil = {\time 48/2 \longbarbeams}
 
 agirsakilbars = {
-  s4*8 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*8 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*8 \nibar "dashed"
-  s4*8 \nibar "dashed"
-  s4*8 \nibar "dashed"
+  s4*8 \nibar "!"
+  s4*12 \nibar "!"
+  s4*8 \nibar "!"
+  s4*12 \nibar "!"
+  s4*12 \nibar "!"
+  s4*12 \nibar "!"
+  s4*8 \nibar "!"
+  s4*8 \nibar "!"
+  s4*8 \nibar "!"
   s4*8 \nibar "||"
 }
 
@@ -688,15 +688,15 @@ agirsakilPattern = {
     \autoBeamOff
     \time 48/2
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "dashed"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
     \bar "|"
   }
@@ -719,7 +719,7 @@ AksakSemaiPattern = {
 
 AksakSemaiPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA kdh8_\TE kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA kdh8_\TE kdh_\KE \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK kdh8_\TE kdh_\KE
   }
 }
@@ -735,9 +735,9 @@ ayindevrirevaniPattern = {
     \autoBeamOff
     \time 14/8
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl^\DU \stemDown kdh_\KE \stemDown kdh_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \bar "dashed"
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl^\DU \stemDown kdh_\KE \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \bar "!"
     \stemDown kdh_\TEK \stemDown kdh_\KA \stemDown kdh_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -747,22 +747,22 @@ ayindevrirevaniPattern = {
 berefsan = {\time 32/4 \SenginSemaibeams }
 
 berefsanbars = {
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed" \break
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1. \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!" \break
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
 berefsaneightbars = {
-  s8*6 \nibar "dashed"
-  s8*6 \nibar "dashed"
-  s2 \nibar "dashed"
-  s2 \nibar "dashed"
-  s2 \nibar "dashed"
-  s2 \nibar "dashed"
+  s8*6 \nibar "!"
+  s8*6 \nibar "!"
+  s2 \nibar "!"
+  s2 \nibar "!"
+  s2 \nibar "!"
+  s2 \nibar "!"
   s2 \nibar "|"
 }
 
@@ -774,12 +774,12 @@ XberefsanPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -787,24 +787,24 @@ XberefsanPattern = {
 
 berefsanPattern = {
   \drummode {
-    \stemUp kdl1^\DUM \stemDown kdh2_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemDown kdh2_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \bar "dashed"
-    \stemUp kdl2^\DUM kdl2^\TEK \bar "dashed"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "dashed"
+    \stemUp kdl1^\DUM \stemDown kdh2_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemDown kdh2_\TEK \bar "!"
+    \stemUp kdl1^\DUM \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \bar "!"
+    \stemUp kdl2^\DUM kdl2^\TEK \bar "!"
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "!"
     \stemUp kdl4^\TEK \stemDown kdh4_\KA \stemUp kdl4^\TEK \stemDown kdh4_\KA
   }
 }
 
 berefsanPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
@@ -813,9 +813,9 @@ berefsanPatternVel = {
 nimberefsan = {\time 16/8 \nimberefsanbeams }
 
 nimberefsanbars = {
-  s8*3 \nibar "dashed"
-  s8*5 \nibar "dashed"
-  s2 \nibar "dashed"
+  s8*3 \nibar "!"
+  s8*5 \nibar "!"
+  s2 \nibar "!"
   s2 \nibar "|"
 }
 
@@ -827,12 +827,12 @@ nimberefsanPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -842,9 +842,9 @@ nimberefsanPattern = {
 nimberefsanfour = {\time 16/4 \sofyanbeams }
 
 nimberefsanfourbars = {
-  s4*3 \nibar "dashed"
-  s4*5 \nibar "dashed"
-  s1 \nibar "dashed"
+  s4*3 \nibar "!"
+  s4*5 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -856,12 +856,12 @@ nimberefsanfourPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -871,20 +871,20 @@ nimberefsanfourPattern = {
 cenber = {\time 24/4 \SenginSemaibeams}
 
 cenberbars = {
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
   s1 \nibar "|"
 }
 
 cenberbarsFOURS = {
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar ""
-  s2 \nibar "dashed"
+  s2 \nibar "!"
   s1 \nibar ""
-  s2 \nibar "dashed"
+  s2 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -896,30 +896,30 @@ XcenberPattern = {
     \autoBeamOff
     \time 24/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
+    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
 
 cenberPattern = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "dashed"
-    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK \bar "dashed" \break
-    \stemUp kdl2^\DUM \stemDown kdh_\TA \stemDown <kdh kdl>2_\HEK \bar "dashed"
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "!"
+    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK \bar "!" \break
+    \stemUp kdl2^\DUM \stemDown kdh_\TA \stemDown <kdh kdl>2_\HEK \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
 
 cenberPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
+    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
@@ -927,10 +927,10 @@ cenberPatternVel = {
 cenbertwo = {\time 24/2 \SixTwobeams}
 
 cenbertwobars = {
-  s2*2 \nibar ""  s2*2 \nibar "dashed"
-  s2*2 \nibar ""  s2*2 \nibar "dashed"
-  s2*3 \nibar "" s2*3 \nibar "dashed"
-  s2*3 \nibar "" s2*3 \nibar "dashed"
+  s2*2 \nibar ""  s2*2 \nibar "!"
+  s2*2 \nibar ""  s2*2 \nibar "!"
+  s2*3 \nibar "" s2*3 \nibar "!"
+  s2*3 \nibar "" s2*3 \nibar "!"
   s2*2 \nibar ""  s2*2 \nibar "|"
 }
 
@@ -939,11 +939,11 @@ cenbertwobars = {
 agircenber = {\time 24/2 \longbarbeams}
 
 agircenberbars = {
-  s1 \nibar "" s1 \nibar "dashed"
-  s1 \nibar "" s1 \nibar "dashed"
-  s1. \nibar "" s1. \nibar "dashed"
-  s1. \nibar "" s1. \nibar "dashed"
-  s1 \nibar "" s1 \nibar "dashed"
+  s1 \nibar "" s1 \nibar "!"
+  s1 \nibar "" s1 \nibar "!"
+  s1. \nibar "" s1. \nibar "!"
+  s1. \nibar "" s1. \nibar "!"
+  s1 \nibar "" s1 \nibar "!"
 }
 
 agircenberPatternMidi = { b4 d8 d d4 d b4 b8 d b4 b4 d4 d8 d d4 d d4 d b8 d b4 d4 d8 d d4 d d4 d d4 d }
@@ -967,17 +967,17 @@ agircenberPattern = {
 cenberagir = {\time 12/4 \SenginSemaibeams}
 
 cenberagirbars = {
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
 cenberagirbarsBREAKS = {
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s2. \nibar "" \break
-  s2. \nibar "dashed"
-  s1. \nibar "dashed"
+  s2. \nibar "!"
+  s1. \nibar "!"
   s1 \nibar "|"
 }
 
@@ -1002,7 +1002,7 @@ cenberagirPattern = {
 cifteduyek = { \time 16/4 \cifteduyekbeams }
 
 cifteduyekbars = {
-  \repeat unfold 3 {s1 \nibar "dashed" }
+  \repeat unfold 3 {s1 \nibar "!" }
   s1 \nibar "|"
 }
 
@@ -1014,22 +1014,22 @@ XcifteduyekPattern = {
     \autoBeamOff
     \time 16/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl4^\DU \stemDown kdh_\ME \bar "dashed" \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl4^\DU \stemDown kdh_\ME \bar "!" \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
 }
 
 cifteduyekPattern = {
   \drummode {
-    \stemUp kdl2^\DUM \stemDown kdh1_\TEK kdh2_\TEK \bar "dashed"
+    \stemUp kdl2^\DUM \stemDown kdh1_\TEK kdh2_\TEK \bar "!"
     \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE
   }
 }
 
 cifteduyekPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl4^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE kdh4_\TEK \stemDown kdh_\KA
   }
 }
@@ -1045,7 +1045,7 @@ curcunaPattern = {
     \autoBeamOff
     \time 10/8
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK
     \bar "|"
   }
@@ -1067,19 +1067,19 @@ curcunasixteenPatternMidi = { \stemUp b8 b16 \stemDown d8 \stemUp b8 \stemDown d
 devrikebir = { \time 28/4 \SenginSemaibeams}
 
 devrikebirbars = {
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
+  s1. \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
 devrikebirbarsNB = {
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "dashed"
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "|"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "!"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
 devrikebirPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
@@ -1088,44 +1088,44 @@ devrikebirPatternMidislow = { b2 b  d b4 d b8 d b4 d2 d d b b d d b4 d b d }
 
 devrikebirPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh2_\TEK \stemDown kdh_\TEK \bar "dashed"
-    \stemDown kdh2_\TEK \stemUp kdl2^\DUM kdl2^\DUM  \bar "dashed"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh2_\TEK \stemDown kdh_\TEK \bar "!"
+    \stemDown kdh2_\TEK \stemUp kdl2^\DUM kdl2^\DUM  \bar "!"
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
 }
 
 devrikebirPatternTwo = {
   \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh1_\TEK \bar "dashed"
-    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "dashed"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh1_\TEK \bar "!"
+    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "!"
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
 }
 
 devrikebirPatternThree = {
   \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \bar "dashed"
-    \stemDown kdh1_\TEK \bar "dashed"
-    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "dashed"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "dashed"
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemUp kdl1^\DUM \bar "!"
+    \stemDown kdh1_\TEK \bar "!"
+    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "!"
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
 }
 
 devrikebirPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed" \break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
@@ -1136,15 +1136,15 @@ devrikebirfourteen = {
 }
 
 devrikebirfourteenbars = {
-  s4 s4 s4 s1  \nibar "dashed"
+  s4 s4 s4 s1  \nibar "!"
   s4 s4 s4 s1 \nibar "|"
 }
 
 devrikebirfourteenbarsNB = {
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "dashed"
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "|"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "!"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
 devrikebirfourteenPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
@@ -1157,11 +1157,11 @@ devrikebirfourteenPattern = {
     \autoBeamOff
     \time 28/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed" \break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1171,20 +1171,20 @@ devrikebirfourteenPattern = {
 muzaafdevrikebir = { \time 28/4 \sofyanbeams }
 
 muzaafdevrikebirbars = {
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
 muzaafdevrikebirbarsNB = {
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "dashed"
-  s2. \nibar "" s2. \nibar "dashed"
-  s2 \nibar "" s2 \nibar "dashed" s2 \nibar "" s2 \nibar "|"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "!"
+  s2. \nibar "" s2. \nibar "!"
+  s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
 muzaafdevrikebirPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
@@ -1193,20 +1193,20 @@ muzaafdevrikebirPatternMidislow = { b2 b  d b4 d b8 d b4 d2 d d b b d d b4 d b d
 
 muzaafdevrikebirPattern = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "dashed" %\break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!" %\break
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
 
-    \stemDown <kdl kdh>4_\HEK kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA kdh8_\TE kdh8_\KE kdh4_\TEK \bar "dashed"
-    kdh4_\KA kdh8_\TE kdh8_\KE \stemUp kdl4^\DU \stemDown kdh_\ME \bar "dashed"
+    \stemDown <kdl kdh>4_\HEK kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA kdh8_\TE kdh8_\KE kdh4_\TEK \bar "!"
+    kdh4_\KA kdh8_\TE kdh8_\KE \stemUp kdl4^\DU \stemDown kdh_\ME \bar "!"
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" %\break
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" %\break
     \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "dashed"
-    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA  \bar "dashed" }
+    \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "!"
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA  \bar "!" }
 
   }
 }
@@ -1222,7 +1222,7 @@ devrihindiPattern = {
     \autoBeamOff
     \time 7/8
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1232,11 +1232,11 @@ devrihindiPattern = {
 devrirevan = { \time 26/4 \SenginSemaibeams}
 
 devrirevanbars = {
-  s4*5 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s4*5 \nibar "dashed"
-  s1 \nibar "dashed"
+  s4*5 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s4*5 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -1248,11 +1248,11 @@ devrirevanPattern = {
     \autoBeamOff
     \time 28/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed" \break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1302,11 +1302,11 @@ duyekPatternVel = {
 evsat = {\time 26/8 \evsatbeams }
 
 evsatbars = {
-  s8*5 \nibar "dashed"
-  s2 \nibar "dashed"
-  s2 \nibar "dashed"
-  s8*5 \nibar "dashed"
-  s2 \nibar "dashed"
+  s8*5 \nibar "!"
+  s2 \nibar "!"
+  s2 \nibar "!"
+  s8*5 \nibar "!"
+  s2 \nibar "!"
   s2 \nibar "|"
 }
 
@@ -1318,9 +1318,9 @@ evsatPattern = {
     \autoBeamOff
     \time 20/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1330,25 +1330,25 @@ evsatPattern = {
 fahte = {\time 20/4 \SenginSemaibeams }
 
 fahtebars = {
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
   s1 \nibar "|"
 }
 
 fahtebarsBREAKS = {
-  s1 \nibar "dashed"
+  s1 \nibar "!"
   s2. \nibar ""
-  s2. \nibar "dashed"
+  s2. \nibar "!"
   s2. \nibar ""
-  s2. \nibar "dashed"
+  s2. \nibar "!"
   s1 \nibar "|"
 }
 
 fahtebarsLB = {
-  s2 \nibar "" s2 \nibar "dashed"
-  s2 \nibar "" s2 \nibar "" s2 \nibar "dashed"
-  s2 \nibar "" s2 \nibar "" s2 \nibar "dashed"
+  s2 \nibar "" s2 \nibar "!"
+  s2 \nibar "" s2 \nibar "" s2 \nibar "!"
+  s2 \nibar "" s2 \nibar "" s2 \nibar "!"
   s2 \nibar "" s2 \nibar "|"
 }
 
@@ -1356,28 +1356,28 @@ fahtePatternMidi = { b4 b8 d b4 b d4 d8 d d4 d d d b8 d b4 d d8 d d4 d d4 d d d 
 
 fahtePatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "dashed"
-    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK  \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "dashed"
+    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "!"
+    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK  \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "!"
     \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
 }
 
 fahtePatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" %\break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" %\break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
   }
 }
 
 fahtePatternVelTwo = {
   \drummode {
-    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "dashed"
-    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA} \bar "dashed"
+    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "!"
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA} \bar "!"
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
-    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
 
   }
@@ -1396,25 +1396,25 @@ agirfahte = {
 }
 
 agirfahtebars = {
-  s1*2 \nibar "dashed"
-  s1.*2 \nibar "dashed"
-  s1.*2 \nibar "dashed"
+  s1*2 \nibar "!"
+  s1.*2 \nibar "!"
+  s1.*2 \nibar "!"
   s1*2 \nibar "|"
 }
 
 agirfahtebarsBREAKS = {
-  s1 \nibar "dashed"
+  s1 \nibar "!"
   s2. \nibar ""
-  s2. \nibar "dashed"
+  s2. \nibar "!"
   s2. \nibar ""
-  s2. \nibar "dashed"
+  s2. \nibar "!"
   s1 \nibar "|"
 }
 
 agirfahtebarsLB = {
-  s2 \nibar "" s2 \nibar "dashed"
-  s2 \nibar "" s2 \nibar "" s2 \nibar "dashed"
-  s2 \nibar "" s2 \nibar "" s2 \nibar "dashed"
+  s2 \nibar "" s2 \nibar "!"
+  s2 \nibar "" s2 \nibar "" s2 \nibar "!"
+  s2 \nibar "" s2 \nibar "" s2 \nibar "!"
   s2 \nibar "" s2 \nibar "|"
 }
 
@@ -1426,9 +1426,9 @@ agirfahtePattern = {
     \autoBeamOff
     \time 20/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "dashed"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1438,7 +1438,7 @@ agirfahtePattern = {
 hafif = {\time 32/4 \sofyanbeams }
 
 hafifbars = {
-  \repeat unfold 7 {s1 \nibar "dashed" }
+  \repeat unfold 7 {s1 \nibar "!" }
   s1 \nibar "|"
 }
 
@@ -1450,13 +1450,13 @@ hafifPattern = {
     \autoBeamOff
     \time 32/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed" \break
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh8_\TE \stemDown kdh_\KE \bar "dashed"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
     \bar "|"
   }
@@ -1466,10 +1466,10 @@ hafifPattern = {
 havi = {\time 64/4 \SenginSemaibeams }
 
 havibars = {
-  \repeat unfold 2 {s1 \nibar "dashed" }
-  \repeat unfold 2 {s1. \nibar "dashed"}
-  \repeat unfold 3 { s1 \nibar "dashed" s1 \nibar "dashed" s1 \nibar "dashed" }
-  s1 \nibar "dashed" s1 \nibar "||"
+  \repeat unfold 2 {s1 \nibar "!" }
+  \repeat unfold 2 {s1. \nibar "!"}
+  \repeat unfold 3 { s1 \nibar "!" s1 \nibar "!" s1 \nibar "!" }
+  s1 \nibar "!" s1 \nibar "||"
 }
 
 haviPatternMidi = {  b2  b4  d b2 b4 d b2 b4 d b d b2 b4 d b d b2 d b b b4 d b d b2 b4 d b b d2 b4 d b2 d b4 d b d d2 b4 d d2 b4 d b b d2 b4 d }
@@ -1527,7 +1527,7 @@ oynakPattern = {
 muhammes = {\time 32/4 \sofyanbeams}
 
 muhammesbars = {
-  \repeat unfold 7 {s1 \nibar "dashed" } s1 \nibar "|"
+  \repeat unfold 7 {s1 \nibar "!" } s1 \nibar "|"
 }
 
 muhammesPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
@@ -1535,14 +1535,14 @@ muhammesPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d 
 
 muhammesPattern = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemUp kdl2^\DUM kdl^\DUM\bar "dashed"
-    \stemDown kdh_\TEK \stemUp kdl4^\TEK \stemDown kdh_\KA \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "dashed"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl2^\DUM \bar "dashed"
+    \stemUp kdl2^\DUM kdl4^\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemUp kdl2^\DUM kdl^\DUM\bar "!"
+    \stemDown kdh_\TEK \stemUp kdl4^\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "!"
+    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl2^\DUM \bar "!"
 
-    \stemUp kdl2^\TA \stemDown kdh2_\HEK \bar "dashed"
+    \stemUp kdl2^\TA \stemDown kdh2_\HEK \bar "!"
 
     kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
@@ -1550,13 +1550,13 @@ muhammesPattern = {
 
 muhammesPatternVel = {
   \drummode {
-    \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE \bar "dashed" kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA \bar "dashed"
+    \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE \bar "!" kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA \bar "!"
 
-    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \bar "dashed"
-    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA \bar "dashed" \break
-    kdh2_\HEK kdh_\HEK \bar "dashed" kdh4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA \bar "dashed"
+    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \bar "!"
+    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA \bar "!" \break
+    kdh2_\HEK kdh_\HEK \bar "!" kdh4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME
-    \repeat unfold 2 {kdh8_\TE kdh8_\KE} \bar "dashed"
+    \repeat unfold 2 {kdh8_\TE kdh8_\KE} \bar "!"
     kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA
   }
 }
@@ -1565,7 +1565,7 @@ muhammesPatternVel = {
 muhammessixteentwo = {\time 16/2 \SixteenTwobeams}
 
 muhammessixteentwobars = {
-  \repeat unfold 3 {s4*8 \nibar "dashed" } s4*8 \nibar "|"
+  \repeat unfold 3 {s4*8 \nibar "!" } s4*8 \nibar "|"
 }
 
 muhammessixteentwoPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
@@ -1581,12 +1581,12 @@ muhammessixteentwoPattern = {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
-      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
+      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "!"
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
-      \bar "dashed" \break
+      \bar "!" \break
     }
     \bar "|"
   }
@@ -1596,7 +1596,7 @@ muhammessixteentwoPattern = {
 muhammessixteenfour = {\time 16/4 \sofyanbeams}
 
 muhammessixteenfourbars = {
-  \repeat unfold 3 {s4*4 \nibar "dashed" } s1 \nibar "|"
+  \repeat unfold 3 {s4*4 \nibar "!" } s1 \nibar "|"
 }
 
 muhammessixteenfourPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
@@ -1612,12 +1612,12 @@ muhammessixteenfourPattern = {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
-      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
+      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "!"
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
-      \bar "dashed" \break
+      \bar "!" \break
     }
     \bar "|"
   }
@@ -1627,10 +1627,10 @@ muhammessixteenfourPattern = {
 nimsakil = {\time 24/4 \SenginSemaibeams}
 
 nimsakilbars = {
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -1642,15 +1642,15 @@ nimsakilPattern = {
     \autoBeamOff
     \time 48/2
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "dashed"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
     \bar "|"
   }
@@ -1660,11 +1660,11 @@ nimsakilPattern = {
 remel = {\time 28/2 \SixTwobeams}
 
 remelbars = {
-  s4*8 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*8 \nibar "dashed"
-  s4*12 \nibar "dashed"
-  s4*8 \nibar "dashed"
+  s4*8 \nibar "!"
+  s4*12 \nibar "!"
+  s4*8 \nibar "!"
+  s4*12 \nibar "!"
+  s4*8 \nibar "!"
   s4*8 \nibar "|"
 }
 
@@ -1681,12 +1681,12 @@ remelPattern = {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
-      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
+      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "!"
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
-      \bar "dashed" \break
+      \bar "!" \break
     }
     \bar "|"
   }
@@ -1697,11 +1697,11 @@ remelfour = {\time 28/4 \SenginSemaibeams}
 
 remelfourbars = {
   % 4 6 4 6 4 4
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -1718,12 +1718,12 @@ remelfourPattern = {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
-      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "dashed"
+      \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "!"
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
-      \bar "dashed" \break
+      \bar "!" \break
     }
     \bar "|"
   }
@@ -1734,15 +1734,15 @@ sakil = {\time 48/4 \SenginSemaibeams}
 
 sakilbars = {
   % 4 6 4 6 6 6 4 4 4 4
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
-  s1. \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
-  s1 \nibar "dashed"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
+  s1 \nibar "!"
   s1 \nibar "|"
 }
 
@@ -1754,15 +1754,15 @@ sakilPattern = {
     \autoBeamOff
     \time 48/2
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "dashed"
-    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "dashed"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "dashed"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl1^\DUM \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemDown kdh1_\TEK \stemDown kdh1_\TEK \bar "!"
+    \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
+    \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
     \bar "|"
   }
@@ -1798,7 +1798,7 @@ SenginSemaiPattern = {
     \autoBeamOff
     \time 6/4
     \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh_\TEK \bar "dashed"
+    \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh_\TEK \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh2_\TEK
     \bar "|"
   }
@@ -1930,11 +1930,6 @@ darbeynPatternMidi = {
   \cenberPatternMidi
   \devrikebirPatternMidi
   \berefsanPatternMidi
-}
-
-\layout {
-  ragged-right=##f
-  \context { \Score \remove "Bar_number_engraver" }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
