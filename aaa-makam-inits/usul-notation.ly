@@ -386,7 +386,7 @@ ayindevrirevanibeams = {
 
 curcunabeams = {
   % BEAMING FOR 10/8
-  \set Timing.beatStructure = #'(3 2 2 3)
+  \set Timing.beatStructure = #'(2 1 2 2 2 1)
 }
 
 curcunasixteenbeams = {
