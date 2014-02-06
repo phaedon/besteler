@@ -23,9 +23,6 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \layout {
-  ragged-right=##f
-  %\context { \Score \remove "Bar_number_engraver" } 
-  \context { \Lyrics \override LyricText #'font-size = #-0.5 }
 }
 
 \paper {
