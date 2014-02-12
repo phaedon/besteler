@@ -18,13 +18,14 @@ StaffOverides = {
   \override Staff.TimeSignature #'break-visibility = #end-of-line-invisible
   \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
   \set Staff.printKeyCancellation = ##f
+
   \override Score.BreakAlignment #'break-align-orders =
   #(make-vector  3
     '(left-edge
       clef
       key-cancellation
-      key-signature
       staff-bar
+      key-signature
       time-signature
   ))
   
@@ -38,23 +39,7 @@ StaffOverides = {
     (next-note . (semi-fixed-space . 1.8))
     (right-edge . (extra-space . 0.0))
   )
-  
-  %% KEY SIGNATURE PADDING
-  
-  \override Staff.KeySignature #'padding-pairs
-  = #'(
-    (("accidentals.mirroredflat" . "accidentals.flat.slash") . 0.5)
-    (("accidentals.mirroredflat" . "accidentals.mirroredflat") . 0.5)
-    (("accidentals.mirroredflat" . "accidentals.sharp") . 0.5)
-    (("accidentals.flat.slash" . "accidentals.flat.slash") . 0.1)
-    (("accidentals.flat" . "accidentals.flat.slash") . 0.3)
-    (("accidentals.flat.slash" . "accidentals.sharp") . 0.5)
-    (("accidentals.flat" . "accidentals.flat") . 0.3)
-    (("accidentals.sharp" . "accidentals.sharp") . 0.3)
-    (("accidentals.flat" . "accidentals.sharp") . 0.5)
-    (("accidentals.sharp.slashslash.stem" . "accidentals.sharp") . 0.3)
-  )
-  
+
   \override Score.VoltaBracket #'font-name = #"New Century Schoolbook"
   \override Score.VoltaBracket #'font-size = #-2.0
   \override BreathingSign  #'Y-offset = #3

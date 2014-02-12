@@ -12,7 +12,8 @@ measures={}
 music=\relative c' {a'2~ a s2 s2}
 
 \relative c' {
-  \time 8/4
+\StaffOverides
+\time 8/4
 
   \mark \markup {"\buzurk"}
   \key c \buzurk

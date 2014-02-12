@@ -244,12 +244,8 @@ zirefkend=\cargah
     \override AccidentalCautionary.glyph-name-alist = \makamGlyphs
     \override TrillPitchAccidental.glyph-name-alist = \makamGlyphs
     \override AmbitusAccidental.glyph-name-alist = \makamGlyphs
-  }
 
-  \context {
-    \Score
-    keyAlterationOrder =
-    #`(
+    keyAlterationOrder = #`(
        (6 . ,-1/9)(6 . ,-4/9)(6 . ,-5/9)
        (1 . ,-4/9)
        (2 . ,-4/9)
@@ -263,6 +259,21 @@ zirefkend=\cargah
        (5 . ,4/9)
        (2 . ,4/9)
        )
-  }
+
+     \override KeySignature #'padding-pairs = #'(
+    (("accidentals.mirroredflat" . "accidentals.flat.slash") . 0.5)
+    (("accidentals.mirroredflat" . "accidentals.mirroredflat") . 0.5)
+    (("accidentals.mirroredflat" . "accidentals.sharp") . 0.5)
+    (("accidentals.flat.slash" . "accidentals.flat.slash") . 0.1)
+    (("accidentals.flat" . "accidentals.flat.slash") . 0.3)
+    (("accidentals.flat.slash" . "accidentals.sharp") . 0.5)
+    (("accidentals.flat" . "accidentals.flat") . 0.3)
+    (("accidentals.sharp" . "accidentals.sharp") . 0.3)
+    (("accidentals.flat" . "accidentals.sharp") . 0.5)
+    (("accidentals.sharp.slashslash.stem" . "accidentals.sharp") . 0.3)
+  )
+
+}
+
 }
 
