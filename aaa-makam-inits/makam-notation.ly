@@ -70,7 +70,7 @@ StaffOverides = {
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %% MAKAM MUSIC KEY SIGNATURES
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-buzurk={\set Staff.keySignature=#'((3 . 4/9))}
+%{buzurk={\set Staff.keySignature=#'((3 . 4/9))}
 cargah={\set Staff.keySignature=#'()}
 evcara={\set Staff.keySignature=#'((6 . -1/9)(3 . 4/9)(0 . 4/9)(5 . 4/9)(2 . 4/9))}
 ferahnak={\set Staff.keySignature=#'((0 . 4/9)(3 . 4/9))}
@@ -161,7 +161,7 @@ tarzicedid=\kurdi
 yenisipihr=\ussak
 yegah=\rast
 zavil=\mahur
-zirefkend=\cargah
+zirefkend=\cargah %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TUPLETS AND TRIPLETS

@@ -143,97 +143,98 @@ makamGlyphs = #`((1 . "accidentals.doublesharp")
 
 %% set key signatures
 
-buzurkDEV = #'((3 . 4/9))
-cargahDEV = #'((0 . 0/9))
-evcaraDEV = #'((6 . -1/9)(3 . 4/9)(0 . 4/9)(5 . 4/9)(2 . 4/9))
-ferahnakDEV = #'((0 . 4/9)(3 . 4/9))
-guldesteDEV = #'((1 . 4/9)(3 . 5/9))
-hicazDEV = #'((6 . -4/9)(0 . 4/9))
-hicazkarDEV = #'((6 . -1/9)(2 . -4/9)(5 . -4/9)(3 . 4/9))
-kurdiDEV = #'((6 . -5/9))
-kurdilihicazkarDEV = #'((6 . -5/9)(2 . -5/9)(5 . -5/9))
-mahurDEV = #'((3 . 5/9))
-nihavendDEV = #'((6 . -5/9)(2 . -5/9))
-nisaburDEV = #'((0 . 4/9))
-nisaburekDEV = #'((3 . 5/9)(0 . 4/9))
-rastDEV = #`((3 . ,4/9) (6 . ,-1/9))
-rengidilDEV = #'((5 . -4/9)(6 . -1/9)(1 . -4/9))
-revnaknumaDEV = #'((6 . -1/9)(0 . 4/9)(5 . 4/9))
-sabaDEV = #'((6 . -1/9)(1 . -4/9))
-segahDEV = #'((6 . -1/9)(2 . -1/9))
-sultaniyegahDEV = #'((6 . -5/9)(0 . 4/9))
-suzidilDEV = #'((3 . 1/9)(-3 . 4/9)(1 . 4/9))
-suznakDEV = #'((6 . -1/9)(2 . -4/9)(3 . 4/9))
-sedarabanDEV = #'((6 . -4/9)(2 . -4/9)(3 . 4/9)(0 . 4/9))
-serefnumaDEV = #'((6 . -4/9)(3 . 4/9)(0 . 4/9))
-sevkefzaDEV = #'((6 . -5/9)(1 . -4/9))
-ussakDEV = #'((6 . -1/9))
-vechiarazbarDEV = #'((6 . -1/9)(3 . -1/9))
-zirguleDEV = #'((6 . -4/9)(3 . 1/9)(0 . 4/9)(4 . 4/9))
+buzurk = #'((3 . 4/9))
+cargah = #'((0 . 0/9))
+evcara = #'((6 . -1/9)(3 . 4/9)(0 . 4/9)(5 . 4/9)(2 . 4/9))
+ferahnak = #'((0 . 4/9)(3 . 4/9))
+guldeste = #'((1 . 4/9)(3 . 5/9))
+hicaz = #'((6 . -4/9)(0 . 4/9))
+hicazkar = #'((6 . -1/9)(2 . -4/9)(5 . -4/9)(3 . 4/9))
+kurdi = #'((6 . -5/9))
+kurdilihicazkar = #'((6 . -5/9)(2 . -5/9)(5 . -5/9))
+mahur = #'((3 . 5/9))
+nihavend = #'((6 . -5/9)(2 . -5/9))
+nisabur = #'((0 . 4/9))
+nisaburek = #'((3 . 5/9)(0 . 4/9))
+rast = #`((3 . ,4/9) (6 . ,-1/9))
+rengidil = #'((5 . -4/9)(6 . -1/9)(1 . -4/9))
+%revnaknuma = #'((6 . -1/9)(2 . -1/9)(0 . 4/9))
+saba = #'((6 . -1/9)(1 . -4/9))
+segah = #'((6 . -1/9)(2 . -1/9))
+sultaniyegah = #'((6 . -5/9)(0 . 4/9))
+suzidil = #'((3 . 1/9)(-3 . 4/9)(1 . 4/9))
+suznak = #'((6 . -1/9)(2 . -4/9)(3 . 4/9))
+sedaraban = #'((6 . -4/9)(2 . -4/9)(3 . 4/9)(0 . 4/9))
+serefnuma = #'((6 . -4/9)(3 . 4/9)(0 . 4/9))
+sevkefza = #'((6 . -5/9)(1 . -4/9))
+ussak = #'((6 . -1/9))
+zirgule = #'((6 . -4/9)(3 . 1/9)(0 . 4/9)(4 . 4/9))
 
-acemDEV=\ussakDEV
-acemasiranDEV=\kurdiDEV
-acemkurdiDEV=\kurdiDEV
-arazbarDEV=\segahDEV
-askefzaDEV=\cargahDEV
-bestenigarDEV=\sabaDEV
-beyatiDEV=\ussakDEV
-beyatiarabanDEV=\suznakDEV
-buselikDEV=\cargahDEV
-buselikasiranDEV=\buzurkDEV
-canfezaDEV=\sabaDEV
-cargahOLDDEV=\sabaDEV
-dilkesideDEV=\rastDEV
-dilkeshaveranDEV=\rastDEV
-dugahDEV=\sabaDEV
-eskisipihrDEV=\sabaDEV
-evicDEV=\rastDEV
-ferahfezaDEV=\kurdiDEV
-ferahnumaDEV=\nihavendDEV
-gerdaniyeDEV=\rastDEV
-gulizarDEV=\rastDEV
-hisarDEV=\ussakDEV
-hisarbuselikDEV=\cargahDEV
-huseyniDEV=\rastDEV
-huseyniasiranDEV=\rastDEV
-huzzamDEV=\suznakDEV
-irakDEV=\rastDEV
-isfahanDEV=\ussakDEV
-isfahanekDEV=\ussakDEV
-karcigarDEV=\suznakDEV
-kucekDEV=\sabaDEV
-muhayyerDEV=\rastDEV
-muhayyerkurdiDEV=\kurdiDEV
-muhayyersunbuleDEV=\kurdiDEV
-mustearDEV=\segahDEV
-nevaDEV=\rastDEV
-neveserDEV=\sedarabanDEV
-nihavendDEV=\nihavendDEV
-nikrizDEV=\hicazDEV
-nuhuftDEV=\rastDEV
-pencgahDEV=\rastDEV
-pesendideDEV=\rastDEV
-rahatulervahDEV=\serefnumaDEV
-rehaviDEV=\rastDEV
-ruhnuvazDEV=\mahurDEV
-sabazemzemeDEV=\sabaDEV
-sazkarDEV=\rastDEV
-sevkedilDEV=\rastDEV
-sultaniirakDEV=\rastDEV
-sultanisegahDEV=\segahDEV
-suzidilaraDEV=\cargahDEV
-sehnazDEV=\hicazDEV
-sehnazbuselikDEV=\cargahDEV
-sevkaverDEV=\segahDEV
-sevkitarabDEV=\sabaDEV
-sivenumaDEV=\sabaDEV
-tahirbuselikDEV=\rastDEV
-tahirDEV=\rastDEV
-tarzicedidDEV=\kurdiDEV
-yenisipihrDEV=\ussakDEV
-yegahDEV=\rastDEV
-zavilDEV=\mahurDEV
-zirefkendDEV=\cargahDEV
+acem=\ussak
+acemasiran=\kurdi
+acemkurdi=\kurdi
+arazbar=\segah
+askefza=\cargah
+bestenigar=\saba
+beyati=\ussak
+beyatiaraban=\suznak
+buselik=\cargah
+buselikasiran=\buzurk
+canfeza=\saba
+cargahOLD=\saba
+dilkeside=\rast
+dilkeshaveran=\rast
+dugah=\saba
+eskisipihr=\saba
+evic=\rast
+ferahfeza=\kurdi
+ferahnuma=\nihavend
+gerdaniye=\rast
+gulizar=\rast
+hisar=\ussak
+hisarbuselik=\cargah
+huseyni=\rast
+huseyniasiran=\rast
+huzzam=\suznak
+irak=\rast
+isfahan=\ussak
+isfahanek=\ussak
+karcigar=\suznak
+kucek=\saba
+muhayyer=\rast
+muhayyerkurdi=\kurdi
+muhayyersunbule=\kurdi
+mustear=\segah
+neva=\rast
+neveser=\sedaraban
+nihavend=\nihavend
+nikriz=\hicaz
+nuhuft=\rast
+pencgah=\rast
+pesendide=\rast
+rahatulervah=\serefnuma
+rehavi=\rast
+revnaknuma=\segah
+ruhnuvaz=\mahur
+sabazemzeme=\saba
+sazkar=\rast
+sevkedil=\rast
+sultaniirak=\rast
+sultanisegah=\segah
+suzidilara=\cargah
+sehnaz=\hicaz
+sehnazbuselik=\cargah
+sevkaver=\segah
+sevkitarab=\saba
+sivenuma=\saba
+tahirbuselik=\rast
+tahir=\rast
+tarzicedid=\kurdi
+vechiarazbar=\segah
+yenisipihr=\ussak
+yegah=\rast
+zavil=\mahur
+zirefkend=\cargah
 
 \layout {
   \context {
@@ -249,40 +250,19 @@ zirefkendDEV=\cargahDEV
     \Score
     keyAlterationOrder =
     #`(
-       (6 . ,-1/9)(3 . ,4/9)(0 . ,4/9)
+       (6 . ,-1/9)(6 . ,-4/9)(6 . ,-5/9)
+       (1 . ,-4/9)
+       (2 . ,-4/9)
+       (5 . ,-4/9)
+       (3 . ,1/9)(3 . ,4/9)(3 . ,5/9)
+       (2 . ,-1/9)(2 . ,-5/9)
+       (4 . ,4/9)
+       (1 . ,4/9)
+       (5 . ,-5/9)
+       (0 . ,4/9)
+       (5 . ,4/9)
+       (2 . ,4/9)
        )
   }
-
-  %{\context {
-    \Score
-    keyAlterationOrder =
-    #`(
-       (6 . -1/9)(3 . 4/9)(0 . 4/9)(5 . 4/9)(2 . 4/9)
-       (0 . 4/9)(3 . 4/9)
-       (1 . 4/9)(3 . 5/9)
-       (6 . -4/9)(0 . 4/9)
-       (6 . -1/9)(2 . -4/9)(5 . -4/9)(3 . 4/9)
-       (6 . -5/9)
-       (6 . -5/9)(2 . -5/9)(5 . -5/9)
-       (3 . 5/9)
-       (6 . -5/9)(2 . -5/9)
-       (0 . 4/9)
-       (3 . 5/9)(0 . 4/9)
-       (3 . ,4/9) (6 . ,-1/9)
-       (5 . -4/9)(6 . -1/9)(1 . -4/9)
-       (6 . -1/9)(0 . 4/9)(5 . 4/9)
-       (6 . -1/9)(1 . -4/9)
-       (6 . -1/9)(2 . -1/9)
-       (6 . -5/9)(0 . 4/9)
-       (3 . 1/9)(-3 . 4/9)(1 . 4/9)
-       (6 . -1/9)(2 . -4/9)(3 . 4/9)
-       (6 . -4/9)(2 . -4/9)(3 . 4/9)(0 . 4/9)
-       (6 . -4/9)(3 . 4/9)(0 . 4/9)
-       (6 . -5/9)(1 . -4/9)
-       (6 . -1/9)
-       (6 . -1/9)(3 . -1/9)
-       (6 . -4/9)(3 . 1/9)(0 . 4/9)(4 . 4/9)
-       )
-  } %}
 }
 
