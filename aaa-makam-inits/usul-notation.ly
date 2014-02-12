@@ -528,6 +528,17 @@ zeybekbeams = {
                                                         )))                     %close all entries
 }
 
+agirzeybekbeams = {
+  % BEAMING FOR 9/4 ZEYBEK
+  \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1)
+  %{\set Timing.beamExceptions =
+  #'(                         ;start of alist
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))        %}             %close all entries
+}
+
 oynakbeams = {
   % BEAMING FOR 9/8 ZEYBEK
   \set Timing.beatStructure = #'(2 1 2 2 2 )
@@ -1911,7 +1922,7 @@ zeybekPattern = {
   \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
 }
 
-agirzeybek = {\time 9/4 \zeybekbeams }
+agirzeybek = {\time 9/4 \agirzeybekbeams }
 
 %%%%%%%%%%% darbeyn %%%%%%%%%%%%%
 darbeyn = { \SixTwobeams }

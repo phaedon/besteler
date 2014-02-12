@@ -292,6 +292,14 @@ comp = #(define-music-function (parser location count) ( integer?)
 DaCapoAlFineDOWN=_\markup{ \hspace #-8 \raise #-2.0 "D.C. al fine" }
 DaCapoAlFineUP=^\markup{ \hspace #-8 \raise #0.0 "D.C. al fine" }
 
+MessageMU =
+#(define-music-function
+  (parser location text)
+  (string?)
+  #{
+    \tempo \markup \override #'(font-series . medium) \italic $text
+  #})
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TEXT SPANNERS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
