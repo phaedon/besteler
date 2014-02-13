@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-\include "makam.ly"
+\include "makam-DEV.ly"
 \include "makam-includes.ly"
 
 %%%%%%%%%%%%%%%%%%%% Score %%%%%%%%%%%%%%%%%%%%
@@ -64,7 +64,7 @@ TheBreaks = { }
 
 MelodyForm = {
   \AksakSemai
-  \kurdilihicazkar
+  \key c \kurdilihicazkar
   \haneone \bar "||" \SectionBreak
   \teslim \bar "|." \SectionBreak
   \hanetwo \bar "||" \SectionBreak
@@ -88,7 +88,7 @@ usulcreate = {
 
 MelodyFormMidi = {
   \AksakSemai
-  \kurdilihicazkar
+  \key c \kurdilihicazkar
   \tempo 4=60
   \haneone
   \teslim
@@ -132,20 +132,34 @@ UsulFormMidi = {
 
 \paper {
   ragged-last-bottom = ##f %t is default
-  between-system-padding = 4\mm %4\mm is default
-  between-system-space = 20\mm %20\mm is default
+  %between-system-padding = 4\mm %4\mm is default
+  %between-system-space = 20\mm %20\mm is default
+  system-system-spacing #'basic-distance = #14
+  score-system-spacing =
+  #'((basic-distance . 12)
+     (minimum-distance . 6)
+     (padding . 1)
+     (stretchability . 12))%}
 }
 
 \book {
   \score {
-    \new Staff  <<
-      \new Voice = "BarlinesForm" { \BarlinesForm }
-      \new Voice = "TheBreaks" { \TheBreaks }
-      \new Voice = "MelodyForm" {
-        \transpose g g
-        \relative { \StaffOverides \MelodyForm }
-      }
-      \LyricsOne \LyricsTwo \LyricsThree
+    <<
+      \new Staff <<
+        \new Voice = "BarlinesForm" <<
+          \BarlinesForm
+        >>
+        \new Voice = "BreaksForm" <<
+          \TheBreaks
+        >>
+        \new Voice = "MelodyForm" \transpose d d <<
+          \StaffOverides
+          \MelodyForm
+        >>
+        \lyricsto "MelodyForm" \new Lyrics \LyricsOne \LyricsTwo \LyricsThree
+        %\lyricsto "MelodyForm" \new Lyrics \FirstWordstwo
+      >>
+      %\new DrumStaff << \kudumstaff \UsulForm >>
     >>
     \layout {
       ragged-right=##f
