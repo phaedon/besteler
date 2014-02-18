@@ -1340,23 +1340,23 @@ evsatPattern = {
 %%%%%%%%%%% fahte %%%%%%%%%%%%%
 fahte = {\time 20/4 \SenginSemaibeams }
 
+xfahtebars = {
+  s1 \nibar "!"
+  s1. \nibar "!"
+  s1. \nibar "!"
+  s1 \nibar "|"
+}
+
 fahtebars = {
   s1 \nibar "!"
-  s1. \nibar "!"
-  s1. \nibar "!"
+  s1 \nibar ""
+  s2 \nibar "!"
+  s1 \nibar ""
+  s2 \nibar "!"
   s1 \nibar "|"
 }
 
-fahtebarsBREAKS = {
-  s1 \nibar "!"
-  s2. \nibar ""
-  s2. \nibar "!"
-  s2. \nibar ""
-  s2. \nibar "!"
-  s1 \nibar "|"
-}
-
-fahtebarsLB = {
+xfahtebars = {
   s2 \nibar "" s2 \nibar "!"
   s2 \nibar "" s2 \nibar "" s2 \nibar "!"
   s2 \nibar "" s2 \nibar "" s2 \nibar "!"

@@ -24,9 +24,9 @@ StaffOverides = {
     '(left-edge
       clef
       key-cancellation
-      staff-bar
       key-signature
       time-signature
+      staff-bar
   ))
   
   \override Score.BarLine #'space-alist = #'(
