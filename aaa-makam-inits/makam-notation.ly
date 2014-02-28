@@ -19,15 +19,15 @@ StaffOverides = {
   \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
   \set Staff.printKeyCancellation = ##f
 
-  \override Score.BreakAlignment #'break-align-orders =
+  %{\override Score.BreakAlignment #'break-align-orders =
   #(make-vector  3
     '(left-edge
       clef
       key-cancellation
+      staff-bar
       key-signature
       time-signature
-      staff-bar
-  ))
+  )) %}
   
   \override Score.BarLine #'space-alist = #'(
     (time-signature . (extra-space . 0.75))
@@ -49,7 +49,7 @@ StaffOverides = {
   \override Score.RehearsalMark #'X-offset = #1.3
   \override Score.RehearsalMark #'break-align-symbols = #'(clef)
   \override Score.RehearsalMark #'font-size = #'-0.1
-  
+  \override TupletBracket #'bracket-visibility = ##t
 }
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

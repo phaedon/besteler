@@ -7,219 +7,14 @@
 \version "2.14.2"
 
 drumPitchNames =
-#'((acousticbassdrum . acousticbassdrum)
-   (bassdrum . bassdrum)
-   (hisidestick . hisidestick)
-   (sidestick . sidestick)
-   (losidestick . losidestick)
-   (acousticsnare . acousticsnare)
-   (snare . snare)
-   (handclap . handclap)
-   (electricsnare . electricsnare)
-   (lowfloortom . lowfloortom)
-   (closedhihat . closedhihat)
-   (hihat . hihat)
-   (highfloortom . highfloortom)
-   (pedalhihat . pedalhihat)
-   (lowtom . lowtom)
-   (openhihat . openhihat)
-   (halfopenhihat . halfopenhihat)
-   (lowmidtom . lowmidtom)
-   (himidtom . himidtom)
-   (crashcymbala . crashcymbala)
-   (crashcymbal . crashcymbal)
-   (hightom . hightom)
-   (ridecymbala . ridecymbala)
-   (ridecymbal . ridecymbal)
-   (chinesecymbal . chinesecymbal)
-   (ridebell . ridebell)
-   (tambourine . tambourine)
-   (splashcymbal . splashcymbal)
-   (cowbell . cowbell)
-   (crashcymbalb . crashcymbalb)
-   (vibraslap . vibraslap)
-   (ridecymbalb . ridecymbalb)
-   (mutehibongo . mutehibongo)
-   (hibongo . hibongo)
-   (openhibongo . openhibongo)
-   (mutelobongo . mutelobongo)
-   (lobongo . lobongo)
-   (openlobongo . openlobongo)
-   (mutehiconga . mutehiconga)
-   (muteloconga . muteloconga)
-   (openhiconga . openhiconga)
-   (hiconga . hiconga)
-   (openloconga . openloconga)
-   (loconga . loconga)
-   (hitimbale . hitimbale)
-   (lotimbale . lotimbale)
-   (hiagogo . hiagogo)
-   (loagogo . loagogo)
-   (cabasa . cabasa)
-   (maracas . maracas)
-   (shortwhistle . shortwhistle)
-   (longwhistle . longwhistle)
-   (shortguiro . shortguiro)
-   (longguiro . longguiro)
-   (guiro . guiro)
-   (claves . claves)
-   (hiwoodblock . hiwoodblock)
-   (lowoodblock . lowoodblock)
-   (mutecuica . mutecuica)
-   (opencuica . opencuica)
-   (mutetriangle . mutetriangle)
-   (triangle . triangle)
-   (opentriangle . opentriangle)
-   (oneup . oneup)
-   (twoup . twoup)
-   (threeup . threeup)
-   (fourup . fourup)
-   (fiveup . fiveup)
-   (onedown . onedown)
-   (twodown . twodown)
-   (threedown . threedown)
-   (fourdown . fourdown)
-   (fivedown . fivedown)
-   (bda . acousticbassdrum)
-   (bd . bassdrum)
-   (ssh . hisidestick)
-   (ss . sidestick)
-   (ssl . losidestick)
-   (sna . acousticsnare)
-   (sn . snare)
-   (hc . handclap)
-   (sne . electricsnare)
-   (tomfl . lowfloortom)
-   (hhc . closedhihat)
-   (hh . hihat)
-   (tomfh . highfloortom)
-   (hhp . pedalhihat)
-   (toml . lowtom)
-   (hho . openhihat)
-   (hhho . halfopenhihat)
-   (tomml . lowmidtom)
-   (tommh . himidtom)
-   (cymca . crashcymbala)
-   (cymc . crashcymbal)
-   (tomh . hightom)
-   (cymra . ridecymbala)
-   (cymr . ridecymbal)
-   (cymch . chinesecymbal)
-   (rb . ridebell)
-   (tamb . tambourine)
-   (cyms . splashcymbal)
-   (cb . cowbell)
-   (cymcb . crashcymbalb)
-   (vibs . vibraslap)
-   (cymrb . ridecymbalb)
-   (bohm . mutehibongo)
-   (boh . hibongo)
-   (boho . openhibongo)
-   (bolm . mutelobongo)
-   (bol . lobongo)
-   (bolo . openlobongo)
-   (cghm . mutehiconga)
-   (cglm . muteloconga)
-   (cgho . openhiconga)
+#'(
    (kdh . hiconga)
-   (cglo . openloconga)
    (kdl . loconga)
-   (timh . hitimbale)
-   (timl . lotimbale)
-   (agh . hiagogo)
-   (agl . loagogo)
-   (cab . cabasa)
-   (mar . maracas)
-   (whs . shortwhistle)
-   (whl . longwhistle)
-   (guis . shortguiro)
-   (guil . longguiro)
-   (gui . guiro)
-   (cl . claves)
-   (wbh . hiwoodblock)
-   (wbl . lowoodblock)
-   (cuim . mutecuica)
-   (cuio . opencuica)
-   (trim . mutetriangle)
-   (tri . triangle)
-   (trio . opentriangle)
-   (tt . tamtam)
-   (ua . oneup)
-   (ub . twoup)
-   (uc . threeup)
-   (ud . fourup)
-   (ue . fiveup)
-   (da . onedown)
-   (db . twodown)
-   (dc . threedown)
-   (dd . fourdown)
-   (de . fivedown)
    )
 
 midiDrumPitches = #`(
-                     (acousticbassdrum . ,(ly:make-pitch -3 6 NATURAL))
-                     (bassdrum . ,(ly:make-pitch -2 0 NATURAL))
-                     (hisidestick . ,(ly:make-pitch -3 6 DOUBLE-SHARP))
-                     (sidestick . ,(ly:make-pitch -2 0 SHARP))
-                     (losidestick . ,(ly:make-pitch -2 1 FLAT))
-                     (acousticsnare . ,(ly:make-pitch -2 1 NATURAL))
-                     (snare . ,(ly:make-pitch -2 2 DOUBLE-FLAT))
-                     (handclap . ,(ly:make-pitch -2 1 SHARP))
-                     (electricsnare . ,(ly:make-pitch -2 2 NATURAL))
-                     (lowfloortom . ,(ly:make-pitch -2 3 NATURAL))
-                     (closedhihat . ,(ly:make-pitch -2 3 SHARP))
-                     (hihat . ,(ly:make-pitch -2 4 FLAT))
-                     (highfloortom . ,(ly:make-pitch -2 4 NATURAL))
-                     (pedalhihat . ,(ly:make-pitch -2 4 SHARP))
-                     (lowtom . ,(ly:make-pitch -2 5 NATURAL))
-                     (openhihat . ,(ly:make-pitch -2 5 SHARP))
-                     (halfopenhihat . ,(ly:make-pitch -2 5 SHARP))
-                     (lowmidtom . ,(ly:make-pitch -2 6 NATURAL))
-                     (himidtom . ,(ly:make-pitch -1 0 NATURAL))
-                     (crashcymbala . ,(ly:make-pitch -1 0 SHARP))
-                     (crashcymbal . ,(ly:make-pitch -1 1 FLAT))
-                     (hightom . ,(ly:make-pitch -1 1 NATURAL))
-                     (ridecymbala . ,(ly:make-pitch -1 1 SHARP))
-                     (ridecymbal . ,(ly:make-pitch -1 2 FLAT))
-                     (chinesecymbal . ,(ly:make-pitch -1 2 NATURAL))
-                     (ridebell . ,(ly:make-pitch -1 3 NATURAL))
-                     (tambourine . ,(ly:make-pitch -1 3 SHARP))
-                     (splashcymbal . ,(ly:make-pitch -1 4 NATURAL))
-                     (cowbell . ,(ly:make-pitch -1 4 SHARP))
-                     (crashcymbalb . ,(ly:make-pitch -1 5 NATURAL))
-                     (vibraslap . ,(ly:make-pitch -1 5 SHARP))
-                     (ridecymbalb . ,(ly:make-pitch -1 6 NATURAL))
-                     (mutehibongo . ,(ly:make-pitch -1 6 SHARP))
-                     (hibongo . ,(ly:make-pitch 0 0 NATURAL))
-                     (openhibongo . ,(ly:make-pitch 0 1 DOUBLE-FLAT))
-                     (mutelobongo . ,(ly:make-pitch -1 6 DOUBLE-SHARP))
-                     (lobongo . ,(ly:make-pitch 0 0 SHARP))
-                     (openlobongo . ,(ly:make-pitch 0 1 FLAT))
-                     (mutehiconga . ,(ly:make-pitch 0 1 NATURAL))
-                     (muteloconga . ,(ly:make-pitch 0 2 DOUBLE-FLAT))
-                     (openhiconga . ,(ly:make-pitch 0 1 SHARP))
                      (hiconga . ,(ly:make-pitch 0 2 FLAT))
-                     (openloconga . ,(ly:make-pitch 0 1 DOUBLE-SHARP))
                      (loconga . ,(ly:make-pitch 0 2 NATURAL))
-                     (hitimbale . ,(ly:make-pitch 0 3 NATURAL))
-                     (lotimbale . ,(ly:make-pitch 0 3 SHARP))
-                     (hiagogo . ,(ly:make-pitch 0 4 NATURAL))
-                     (loagogo . ,(ly:make-pitch 0 4 SHARP))
-                     (cabasa . ,(ly:make-pitch 0 5 NATURAL))
-                     (maracas . ,(ly:make-pitch 0 5 SHARP))
-                     (shortwhistle . ,(ly:make-pitch 0 6 NATURAL))
-                     (longwhistle . ,(ly:make-pitch 1 0 NATURAL))
-                     (shortguiro . ,(ly:make-pitch 1 0 SHARP))
-                     (longguiro . ,(ly:make-pitch 1 1 NATURAL))
-                     (guiro . ,(ly:make-pitch 1 0 DOUBLE-SHARP))
-                     (claves . ,(ly:make-pitch 1 1 SHARP))
-                     (hiwoodblock . ,(ly:make-pitch 1 2 NATURAL))
-                     (lowoodblock . ,(ly:make-pitch 1 3 NATURAL))
-                     (mutecuica . ,(ly:make-pitch 1 3 SHARP))
-                     (opencuica . ,(ly:make-pitch 1 4 NATURAL))
-                     (mutetriangle . ,(ly:make-pitch 1 4 SHARP))
-                     (triangle . ,(ly:make-pitch 1 4 DOUBLE-SHARP))
-                     (opentriangle . ,(ly:make-pitch 1 5 NATURAL))
 
                      ;; "transposing" pitches:
                      (oneup . ,(ly:make-pitch 0 1 NATURAL))
@@ -234,93 +29,18 @@ midiDrumPitches = #`(
                      (fivedown . ,(ly:make-pitch -1 2 NATURAL))
                      )
 
-
 #(map
   (lambda (k-v)
     (module-define! (current-module)
       (car k-v)
       (alist->hash-table (cdr k-v)))
     )
-  '((drums-style .
+  '((kudum-style .
       (
-       (acousticbassdrum () #f -3)
-       (bassdrum () #f -3)
-       (sidestick cross #f 1)
-       (acousticsnare () #f 1)
-       (snare () #f 1)
-       (handclap triangle #f 1)
-       (electricsnare () #f 1)
-       (lowfloortom () #f -4)
-       (closedhihat cross "stopped" 3)
-       (hihat cross #f 3)
-       (highfloortom () #f -2)
-       (pedalhihat cross #f -5)
-       (lowtom () #f -1)
-       (openhihat cross "open" 3)
-       (halfopenhihat xcircle #f 3)
-       (lowmidtom () #f 0)
-       (himidtom () #f 2)
-       (crashcymbala xcircle #f 5)
-       (crashcymbal xcircle #f 5)
-       (hightom () #f 4)
-       (ridecymbala cross #f 5)
-       (ridecymbal cross #f 5)
-       (chinesecymbal mensural #f 5)
-       (ridebell () #f 5)
-       (splashcymbal diamond #f 5)
-       (cowbell triangle #f 5)
-       (crashcymbalb cross #f 5)
-       (vibraslap diamond #f 4)
-       (ridecymbalb cross #f 5)
-       ))
-
-    (timbales-style .
-      ((losidestick cross #f -1)
-       (lotimbale () #f -1)
-       (cowbell triangle #f 2)
-       (hisidestick cross #f 1)
-       (hitimbale () #f 1)
-       ))
-
-
-    (congas-style .
-      ((losidestick cross #f -1)
        (loconga () #f -1)
-       (openloconga () "open" -1)
-       (muteloconga () "stopped" -1)
-       (hisidestick cross #f 1)
        (hiconga () #f 1)
-       (openhiconga () "open" 1)
-       (mutehiconga () "stopped" 1)
        ))
 
-
-    (bongos-style .
-      ((losidestick cross #f -1)
-       (lobongo () #f -1)
-       (openlobongo () "open" -1)
-       (mutelobongo () "stopped" -1)
-       (hisidestick cross #f 1)
-       (hibongo () #f 1)
-       (openhibongo () "open" 1)
-       (mutehibongo () "stopped" 1)
-       ))
-
-
-    (percussion-style .
-      ((opentriangle cross "open" 0)
-       (mutetriangle cross "stopped" 0)
-       (triangle cross #f 0)
-       (shortguiro () staccato 0)
-       (longguiro () tenuto 0)
-       (guiro () #f 0)
-       (cowbell triangle #f 0)
-       (claves () #f 0)
-       (tambourine () #f 0)
-       (cabasa cross #f 0)
-       (maracas () #f 0)
-       (handclap () #f 0)
-       ))
     ))
 
 % These lines define the position of the kudum drums in the stave;
@@ -336,11 +56,11 @@ kudumstaff = {
   \override Staff.StaffSymbol #'line-positions = #'(5 -5)
 
   % This is neccessary; if not entered, the barline would be too short!
-  \override Staff.BarLine #'bar-size = #3
+  %\override Staff.BarLine #'bar-size = #2
 
   \autoBeamOff
 
-  \override Stem #'length = #7.40
+  \override Stem #'length = #6.50
   \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
 
   \override Staff.TimeSignature #'break-visibility = #end-of-line-invisible
@@ -358,9 +78,58 @@ kudumstaff = {
 
 }
 
+#(set! paper-alist (cons '("usul size" . (cons (* 11 in) (* 8.5 in))) paper-alist))
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% USUL SPECIFICS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compound time sig with parentheses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+parenthps = #"
+0 0 translate
+45 45 scale
+0 0 0 setrgbcolor
+[] 0 setdash
+1 setlinewidth
+0 setlinejoin
+0 setlinecap
+newpath
+0.0147465 0 moveto
+0.011106 0.00351338 0.00916298 0.00598483 0.00710032 0.00978362 curveto
+0.00248893 0.01832964 3e-008 0.02925362 3e-008 0.04074722 curveto
+3e-008 0.05157272 0.00218483 0.06173772 0.00625033 0.07019282 curveto
+0.00855727 0.07474937 0.01061993 0.07759971 0.0147465 0.08158922 curveto
+0.0147465 0.07807584 lineto
+0.00867816 0.06971302 0.00625033 0.05898344 0.00625033 0.04074724 curveto
+0.00625033 0.02250984 0.00867816 0.01187244 0.0147465 0.00351344 curveto
+0.0147465 6e-008 lineto
+0.0147465 0 lineto
+closepath
+fill"
+
+parenthL = \markup
+{
+  \with-dimensions #'(0 . 0.68) #'(0 . 3.67)
+  \postscript #parenthps
+}
+
+parenthR = \markup { \rotate #180 \parenthL }
+
+#(define (compound-time-parentheses one two num)
+   (markup #:override '(baseline-skip . 0) #:number
+     (#:line
+      (
+
+       #:concat (#:vcenter parenthL #:hspace 0.2 (#:left-align (#:center-column (one num))) #:hspace 0.2 #:vcenter parenthR)
+
+       #:left-align (#:center-column (two num))
+
+
+       ))))
+
 
 %% BEAMING
 Aksakbeams = {
@@ -456,11 +225,11 @@ SenginSemaibeams = {
   % BEAMING FOR 6/4
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
   %{ \set Timing.beamExceptions =
-  #'(;start of alist
-  (end . ;entry for end of beams
-  ( ;start of alist of end points
-  ((1 . 16) . (4 4 4 4 4 4)) ;rule for 1/32 beams -- end each 1/16
-  ))) %close all entries %}
+     #'(;start of alist
+     (end . ;entry for end of beams
+     ( ;start of alist of end points
+     ((1 . 16) . (4 4 4 4 4 4)) ;rule for 1/32 beams -- end each 1/16
+     ))) %close all entries %}
 }
 
 SenginSemaiEightbeams = {
@@ -532,11 +301,11 @@ agirzeybekbeams = {
   % BEAMING FOR 9/4 ZEYBEK
   \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1)
   %{\set Timing.beamExceptions =
-  #'(                         ;start of alist
-                              (end .                   ;entry for end of beams
-                                (                       ;start of alist of end points
-                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
-                                                        )))        %}             %close all entries
+    #'(                         ;start of alist
+    (end .                   ;entry for end of beams
+    (                       ;start of alist of end points
+    ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+    )))        %}             %close all entries
 }
 
 oynakbeams = {
@@ -582,13 +351,6 @@ nibar = #(define-music-function (parser location x) (string?)
 #(define mydrums '((ridebell default #t  3)
                    (cowbell  default #t -3)))
 
-bellstaff = {
-  \override DrumStaff.StaffSymbol #'line-positions = #'(-3 3.2)
-  \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
-  \override Staff.BarLine #'bar-size = #2.2
-  \set DrumStaff.instrumentName = #""
-  \override Stem #'length = #7.5
-}
 
 %% USUL NOTATION OVERRIDES
 usulnotation = {
@@ -602,16 +364,16 @@ usulnotation = {
 }
 
 %% DUM'S AND TEK'S
-DUM="düm"
-DU="dü"
-TEK="tek"
-TEEK="teek"
-TE="te"
-TA="ta"
-KE="ke"
-ME="me"
-HEK="hek"
-KA="kâ"
+DUM=\markup {\fontsize #-2 \halign #-.4 \center-align {"Düm"}}
+DU=\markup {\fontsize #-2 \halign #-.4 \center-align {"Dü"}}
+TEK=\markup {\fontsize #-2 \halign #-.2 \center-align {"Tek"}}
+TEEK=\markup {\fontsize #-2 \halign #-.4 \center-align {"Teek"}}
+TE=\markup {\fontsize #-2 \halign #-.4 \center-align {"Te"}}
+TA=\markup {\fontsize #-2 \halign #-.4 \center-align {"Ta"}}
+KE=\markup {\fontsize #-2 \halign #-.4 \center-align {"Ke"}}
+ME=\markup {\fontsize #-2 \halign #-.4 \center-align {"Me"}}
+HEK=\markup {\fontsize #-2 \halign #-.4 \center-align {"Hek"}}
+KA=\markup {\fontsize #-2 \halign #-.4 \center-align {"Kâ"}}
 
 %DUM="DÜM"
 %DU="DÜ"
@@ -638,8 +400,6 @@ agirAksak = {\time 9/4 \longbarbeams }
 
 agirAksakbars = { s4*9 \bar "|" }
 
-agirAksakPatternMidi = { b4 d8 d d4 d b8 d b4 d2 d8 d }
-
 agirAksakPattern = {
   \drummode {
     \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "!"
@@ -661,17 +421,10 @@ agirduyek = {\time 8/4 }
 
 agirduyekbars = { s1 \nibar "!" s1 \nibar "|" }
 
-agirduyekPatternMidi = { b4 d8 d d4 d b8 d b4 d d8 d }
-
 agirduyekPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 8/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE
-    \bar "|"
   }
 }
 
@@ -691,14 +444,9 @@ agirsakilbars = {
   s4*8 \nibar "||"
 }
 
-agirsakilPatternMidi = { b1 b2 d2 b1 b2 d2 b2 d b1 b2 d2 b4 d4 b8 d8 b4 d1 d1 b1 b1 d1 b1 d1 d1 b1 b2 d2 b2 b2 d2 b4 d4 b2 d2 b4 d4 b2 d2 d2 b4 d4 b4 d4 }
-
 agirsakilPattern = {
-  \bellstaff
+  
   \drummode {
-    \autoBeamOff
-    \time 48/2
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
@@ -709,7 +457,6 @@ agirsakilPattern = {
     \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
-    \bar "|"
   }
 }
 
@@ -718,8 +465,6 @@ Aksak = {\time 9/8 \Aksakbeams }
 
 %%%%%%%%%%% Aksak semai %%%%%%%%%%%%%
 AksakSemai = {\time 10/8 \AksakSemaibeams }
-
-AksakSemaiPatternMidi = { b8 d16 d d8 d d16 d b16 d b8 d4 d16 d }
 
 AksakSemaiPattern = {
   \drummode {
@@ -738,19 +483,28 @@ AksakSemaiPatternVel = {
 %%%%%%%%%%% ayindevrirevani %%%%%%%%%%%%%
 ayindevrirevani = {\time 14/8 \ayindevrirevanibeams }
 
-ayindevrirevaniPatternMidi = {b8 d d b d d d b16 d b8 d d d d d}
+ayindevrirevanibars = {
+  s8*3 \nibar "!"
+  s8*4 \nibar "!"
+  s8*3 \nibar "!"
+  s8*4 \nibar "|"
+}
 
-ayindevrirevaniPattern = {
-  \bellstaff
+ayindevrirevaniPatternOne = {
   \drummode {
-    \autoBeamOff
-    \time 14/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl^\DU \stemDown kdh_\KE \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \bar "!"
+    \stemUp kdl4.^\DUM
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK
+    \stemUp kdl4.^\DUM
+    \stemDown kdh4_\TEK kdh4_\TEK
+  }
+}
+
+ayindevrirevaniPatternTwo = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA
+    \stemUp kdl^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh_\KA
+    \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME
     \stemDown kdh_\TEK \stemDown kdh_\KA \stemDown kdh_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -777,14 +531,8 @@ berefsaneightbars = {
   s2 \nibar "|"
 }
 
-berefsanPatternMidi = { b4 b4 d d8 d d4 d b4 b4 d d8 d d4 d b4 d8 d d4 d b8 d b4 d4 d8 d b4 d8 d d4 d b8 d b4 d4 d8 d d4 d d4 d }
-
 XberefsanPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
@@ -792,7 +540,6 @@ XberefsanPattern = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -830,14 +577,8 @@ nimberefsanbars = {
   s2 \nibar "|"
 }
 
-nimberefsanPatternMidi = { b4 b4 d d8 d d4 d b4 b4 d d8 d d4 d b4 d8 d d4 d b8 d b4 d4 d8 d b4 d8 d d4 d b8 d b4 d4 d8 d d4 d d4 d }
-
 nimberefsanPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
@@ -845,7 +586,6 @@ nimberefsanPattern = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -859,14 +599,8 @@ nimberefsanfourbars = {
   s1 \nibar "|"
 }
 
-nimberefsanfourPatternMidi = { b4 b4 d d8 d d4 d b4 b4 d d8 d d4 d b4 d8 d d4 d b8 d b4 d4 d8 d b4 d8 d d4 d b8 d b4 d4 d8 d d4 d d4 d }
-
 nimberefsanfourPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
@@ -874,7 +608,6 @@ nimberefsanfourPattern = {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -889,6 +622,18 @@ cenberbars = {
   s1 \nibar "|"
 }
 
+cenberbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "24" "4" "4" )
+
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar ""
+}
+
 cenberbarsFOURS = {
   s1 \nibar "!"
   s1 \nibar "!"
@@ -899,14 +644,8 @@ cenberbarsFOURS = {
   s1 \nibar "|"
 }
 
-cenberPatternMidi = { b4 d8 d d4 d b4 b8 d b4 b4 d4 d8 d d4 d d4 d b8 d b4 d4 d8 d d4 d d4 d d4 d }
-
 XcenberPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 24/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
     \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
@@ -915,23 +654,34 @@ XcenberPattern = {
   }
 }
 
-cenberPattern = {
+cenberPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KE \bar "!"
-    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "!"
-    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK \bar "!" \break
-    \stemUp kdl2^\DUM \stemDown kdh_\TA \stemDown <kdh kdl>2_\HEK \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KE
+    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM
+    \repeat unfold 3 {\stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemDown kdh_\TA \stemDown <kdh kdl>2_\HEK
+    \repeat unfold 2 {\stemUp kdl4^\TE \stemDown kdh_\KE}
   }
 }
 
-cenberPatternVel = {
+cenberPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
-    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM
+    \stemDown  kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+  }
+}
+
+cenberPatternVelTwo = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
+    \stemDown kdh4_\TEK \stemDown kdh4_\KA \stemUp kdl4^\DU \stemDown kdh_\ME \stemDown
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
+    \repeat unfold 4 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
   }
 }
 
@@ -957,12 +707,7 @@ agircenberbars = {
   s1 \nibar "" s1 \nibar "!"
 }
 
-agircenberPatternMidi = { b4 d8 d d4 d b4 b8 d b4 b4 d4 d8 d d4 d d4 d b8 d b4 d4 d8 d d4 d d4 d d4 d }
-
 agircenberPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "24" \line { "4" } } }
-  \time 24/4
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \bar "|"
 
   \stemUp d4^\DUM \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemUp d4^\DUM \bar "|"
@@ -992,12 +737,7 @@ cenberagirbarsBREAKS = {
   s1 \nibar "|"
 }
 
-cenberagirPatternMidi = { b4 d8 d d4 d b4 b8 d b4 b4 d4 d8 d d4 d d4 d b8 d b4 d4 d8 d d4 d d4 d d4 d }
-
 cenberagirPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "24" \line { "4" } } }
-  \time 24/4
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b8_\TE \stemDown b_\KE \stemDown b4_\TEK \stemDown b_\KA \bar "|"
 
   \stemUp d4^\DUM \stemUp d8^\DU \stemDown b_\ME \stemUp d4^\DUM \stemUp d4^\DUM \bar "|"
@@ -1017,17 +757,10 @@ cifteduyekbars = {
   s1 \nibar "|"
 }
 
-cifteduyekPatternMidi = { b4 d8 d d4 d d4 d d4 d8 d b4 d b4 d d d8 d d4 d }
-
 XcifteduyekPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 16/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl4^\DU \stemDown kdh_\ME \bar "!" \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -1048,31 +781,36 @@ cifteduyekPatternVel = {
 %%%%%%%%%%% curcuna %%%%%%%%%%%%%
 curcuna = { \time 10/8 \curcunabeams }
 
-curcunaPatternMidi = { b4 b8 d4 b4 d4 d8 }
+curcunabars = {
+  s8*10 \nibar "|"
+}
 
-curcunaPattern = {
-  \bellstaff
+curcunaPatternOne = {
   \drummode {
-    \autoBeamOff
-    \time 10/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK
-    \bar "|"
+  }
+}
+
+curcunaPatternTwo = {
+  \drummode {
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM
+    \stemDown kdh2_\TEK \stemDown kdh_\TEK
+    \stemDown kdh2_\TEK \stemUp kdl2^\DUM kdl2^\DUM
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK
+    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
   }
 }
 
 curcunasixteen = { \time 10/16 \curcunasixteenbeams }
 
 curcunasixteenPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "10" \line { "16" } } }
-  \time 10/16
-  \override Score.TimeSignature #'stencil = ##f
-  \stemUp d8^\DUM \stemDown d16^"te" b8_\KA \bar "|"
-  \stemUp d8^\DUM \stemDown b8_\TEK \stemDown b16_\TEK \bar "|"
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdl16^"te" kdh8_\KA
+    \stemUp kdl8^\DUM \stemDown kdh8_\TEK \stemDown kdh16_\TEK
+  }
 }
-
-curcunasixteenPatternMidi = { \stemUp b8 b16 \stemDown d8 \stemUp b8 \stemDown d8 d16 }
 
 %%%%%%%%%%% devrikebir %%%%%%%%%%%%%
 devrikebir = { \time 28/4 \SenginSemaibeams}
@@ -1086,6 +824,19 @@ devrikebirbars = {
   s1 \nibar "|"
 }
 
+devrikebirbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "28" "6" "4" )
+
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar ""
+}
+        
 devrikebirbarsNB = {
   s2. \nibar "" s2. \nibar "!"
   s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "!"
@@ -1093,51 +844,62 @@ devrikebirbarsNB = {
   s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
-devrikebirPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
-
-devrikebirPatternMidislow = { b2 b  d b4 d b8 d b4 d2 d d b b d d b4 d b d }
+devrikebirPatternTwo = {
+  \drummode {
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM
+    \repeat unfold 3 {\stemDown kdh2_\TEK}
+    \repeat unfold 2 {\stemUp kdl2^\DUM}
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK
+    \stemUp kdl4^\TE \stemDown kdh_\KA \stemUp kdl4^\TE \stemDown kdh_\KA
+  }
+}
 
 devrikebirPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
-    \stemDown kdh2_\TEK \stemDown kdh_\TEK \bar "!"
-    \stemDown kdh2_\TEK \stemUp kdl2^\DUM kdl2^\DUM  \bar "!"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
+    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK
+    \stemUp kdl1^\DUM
+    \stemDown kdh1_\TEK
+    \stemDown kdh1_\TEK \stemUp kdl2^\DUM
+    \stemDown kdh1_\TEK
+    \stemUp kdl4^\TE \stemDown kdh_\KA \stemUp kdl4^\TE \stemDown kdh_\KA
   }
 }
 
-devrikebirPatternTwo = {
+devrikebirPatternVelOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
-    \stemDown kdh1_\TEK \bar "!"
-    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "!"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
-  }
-}
-
-devrikebirPatternThree = {
-  \drummode {
-    \stemUp kdl2^\DUM kdl2^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemUp kdl1^\DUM \bar "!"
-    \stemDown kdh1_\TEK \bar "!"
-    \stemDown kdh1_\TEK \stemUp kdl2^\DUM  \bar "!"
-    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK  \bar "!"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
-  }
-}
-
-devrikebirPatternVel = {
-  \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE
+    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM %\break
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+  }
+}
+
+devrikebirPatternVelTwo = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown kdh2_\TEK } %\break
+
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+  }
+}
+
+devrikebirPatternVelThree = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown kdh2_\TEK } %\break
+
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
   }
 }
 
@@ -1158,23 +920,14 @@ devrikebirfourteenbarsNB = {
   s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
-devrikebirfourteenPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
-
-devrikebirfourteenPatternMidislow = { b2 b  d b4 d b8 d b4 d2 d d b b d d b4 d b d }
-
 devrikebirfourteenPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 28/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
     \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -1198,51 +951,54 @@ muzaafdevrikebirbarsNB = {
   s2 \nibar "" s2 \nibar "!" s2 \nibar "" s2 \nibar "|"
 }
 
-muzaafdevrikebirPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
+muzaafdevrikebirbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "56" "6" "4" )
 
-muzaafdevrikebirPatternMidislow = { b2 b  d b4 d b8 d b4 d2 d d b b d d b4 d b d }
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar "|"
 
-muzaafdevrikebirPattern = {
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar "!"
+  \time 4/4 s1 \nibar ""
+}
+
+muzaafdevrikebirPatternOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!" %\break
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \devrikebirPatternVelOne
 
-    \stemDown <kdl kdh>4_\HEK kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA kdh8_\TE kdh8_\KE kdh4_\TEK \bar "!"
-    kdh4_\KA kdh8_\TE kdh8_\KE \stemUp kdl4^\DU \stemDown kdh_\ME \bar "!"
+    \stemDown <kdl kdh>4_\HEK kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA kdh8_\TE kdh8_\KE kdh4_\TEK
+    kdh4_\KA kdh8_\TE kdh8_\KE \stemUp kdl4^\DU \stemDown kdh_\ME
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" %\break
     \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "!"
-    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA  \bar "!" }
-
+    \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    \repeat unfold 4 {\stemDown kdh4_\TEK \stemDown kdh_\KA }
   }
 }
 
 %%%%%%%%%%% devrihindi %%%%%%%%%%%%%
 devrihindi = {\time 7/8 \devrihindibeams }
 
-devrihindiPatternMidi = { b8 d d b8 d d d }
-
 devrihindiPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 7/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
-%%%%%%%%%%% devrirevan %%%%%%%%%%%%%
-devrirevan = { \time 26/4 \SenginSemaibeams}
+%%%%%%%%%%% bestedevrirevan %%%%%%%%%%%%%
+bestedevrirevan = { \time 26/4 \SenginSemaibeams}
 
-devrirevanbars = {
+bestedevrirevanbars = {
   s4*5 \nibar "!"
   s1 \nibar "!"
   s1 \nibar "!"
@@ -1251,28 +1007,19 @@ devrirevanbars = {
   s1 \nibar "|"
 }
 
-devrirevanPatternMidi = { b4 b d d8 d b4 d d8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d b8 d b4 d d8 d d4 d d d d d }
-
-devrirevanPattern = {
-  \bellstaff
+bestedevrirevanPattern = {
   \drummode {
-    \autoBeamOff
-    \time 28/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \bar "!"
     \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!" \break
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
 %%%%%%%%%%% devrituranbars %%%%%%%%%%%%%
 devrituran = {\time 7/8 \devrituranbeams }
-
-devrituranPatternMidi = { b8 d d b8 d d d }
 
 devrituranPattern = {
   \drummode {
@@ -1281,20 +1028,13 @@ devrituranPattern = {
 }
 
 SdevrituranPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 7/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh4._\TEK
-    \bar "|"
   }
 }
 
 %%%%%%%%%%% duyek %%%%%%%%%%%%%
 duyek = { \time 8/8 \duyekbeams }
-
-duyekPatternMidi = {  b8  d16  d  d16  d  b16  d  b8  d  d16  d }
 
 duyekPattern = {
   \drummode {
@@ -1321,19 +1061,12 @@ evsatbars = {
   s2 \nibar "|"
 }
 
-evsatPatternMidi = { b4 b8 d b4 b d4 d8 d d4 d d d b8 d b4 d d8 d d4 d d4 d d d }
-
 evsatPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 20/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -1363,32 +1096,41 @@ xfahtebars = {
   s2 \nibar "" s2 \nibar "|"
 }
 
-fahtePatternMidi = { b4 b8 d b4 b d4 d8 d d4 d d d b8 d b4 d d8 d d4 d d4 d d d }
+fahtebarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "20" "4" "4" )
+
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar ""
+}
 
 fahtePatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\DUM kdl4^\DUM \bar "!"
-    \stemDown kdh2_\TEK kdh2_\TEK kdh2_\TEK  \bar "!"
-    \stemUp kdl2^\DUM \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK \bar "!"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
+    \stemUp kdl2^\DUM \repeat unfold 2 {kdl4^\DUM}
+    \repeat unfold 3 {\stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK
+    \repeat unfold 2 {\stemUp kdl4^\TE \stemDown kdh_\KE}
   }
 }
 
 fahtePatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" %\break
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
   }
 }
 
 fahtePatternVelTwo = {
   \drummode {
-    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \bar "!"
-    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA} \bar "!"
+    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
-    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA
     \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
 
   }
@@ -1429,14 +1171,8 @@ agirfahtebarsLB = {
   s2 \nibar "" s2 \nibar "|"
 }
 
-agirfahtePatternMidi = { b4 b8 d b4 b d4 d8 d d4 d d d b8 d b4 d d8 d d4 d d4 d d d }
-
 agirfahtePattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 20/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
@@ -1453,23 +1189,52 @@ hafifbars = {
   s1 \nibar "|"
 }
 
-hafifPatternMidi = { b4 b8 d d4 d b8 d d d d4 d b4 b4 d4 d8 d b8 d d d d4 d b4 b4 d4 d8 d b8 d b8 d d8 d d8 d b8 d d8 d d4 d d4 d d4 d }
+hafifbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "32" "4" "4" )
+  \repeat unfold 7 {\time 4/4 s1 \nibar "!" } \time 4/4 s1 \nibar ""
+}
 
-hafifPattern = {
-  \bellstaff
+hafifPatternOne = {
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KE \bar "!"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
-    \stemUp kdl4^\DUM \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh8_\TE \stemDown kdh_\KE \bar "!"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!"
-    \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
+    \repeat unfold 2 {\stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \repeat unfold 3 {\stemUp kdl4^\DUM \stemDown kdh4_\TEK}
+    \repeat unfold 2 {\stemUp kdl4^\DUM}
+    \stemDown kdh2_\TEK
+    \stemUp kdl4^\TE \stemDown kdh4_\KE
+  }
+}
+
+hafifPatternTwo = {
+  \drummode {
+    \repeat unfold 2 {\stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \repeat unfold 2 {\stemUp kdl4^\DUM} \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\TE \stemDown kdh8_\KE \stemUp kdl4^\DUM
+    \stemDown kdh4_\TA \stemDown <kdh kdl>4_\HEK
+    
+    \repeat unfold 2 {\stemUp kdl8^\TE \stemDown kdh8_\KE}
+  }
+}
+
+hafifPatternVelOne = {
+  \drummode {
+    \repeat unfold 2 {\stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA}
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME} \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+
+    \stemUp kdl4^\DU \stemDown kdh_\ME \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    
+    
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} 
+    \stemDown <kdh kdl>4_\HEK \stemDown kdh8_\TE \stemDown kdh_\KE
+    \repeat unfold 4 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
   }
 }
 
@@ -1483,12 +1248,7 @@ havibars = {
   s1 \nibar "!" s1 \nibar "||"
 }
 
-haviPatternMidi = {  b2  b4  d b2 b4 d b2 b4 d b d b2 b4 d b d b2 d b b b4 d b d b2 b4 d b b d2 b4 d b2 d b4 d b d d2 b4 d d2 b4 d b b d2 b4 d }
-
 haviPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "64" \line { "4" } } }
-  \time 64/4
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d2^\DUM  \stemUp d4^\TE  \stemDown b_\KE  \bar "|"
   \stemUp d2^\DUM \stemUp d4^\TE \stemDown b_\KE \bar "|"
   \stemUp d2^\DUM \stemUp d4^\TE \stemDown b_\KE \stemUp d^\TE \stemDown b_\KE \bar "|"
@@ -1510,12 +1270,7 @@ haviPattern = {
 %%%%%%%%%%% karsilama %%%%%%%%%%%%%
 karsilama = {\time 9/8 \zeybekbeams }
 
-karsilamaPatternMidi = { b4 d d b4 d2 }
-
 karsilamaPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "9" \line { "8" } } }
-  \time 9/8
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
   \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
 }
@@ -1524,12 +1279,7 @@ karsilamaPattern = {
 %%%%%%%%%%% oynak %%%%%%%%%%%%%
 oynak = {\time 9/8 \oynakbeams }
 
-oynakPatternMidi = { b4 d d b4 d2 }
-
 oynakPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "9" \line { "8" } } }
-  \time 9/8
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
   \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
 }
@@ -1541,33 +1291,38 @@ muhammesbars = {
   \repeat unfold 7 {s1 \nibar "!" } s1 \nibar "|"
 }
 
-muhammesPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
+muhammesbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "32" "4" "4" )
+  \repeat unfold 7 {\time 4/4 s1 \nibar "!" } \time 4/4 s1 \nibar ""
+}
 
-
-muhammesPattern = {
+muhammesPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemUp kdl2^\DUM kdl^\DUM\bar "!"
-    \stemDown kdh_\TEK \stemUp kdl4^\TEK \stemDown kdh_\KA \bar "!"
-    \stemUp kdl2^\DUM \stemDown kdh_\TEK \bar "!"
-    \stemUp kdl4^\TEK \stemDown kdh_\KA \stemUp kdl2^\DUM \bar "!"
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KE
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK
+    \repeat unfold 2 {\stemUp kdl2^\DUM}
+    \stemDown kdh_\TEK \stemUp kdl4^\TE \stemDown kdh_\KE
+    \stemUp kdl2^\DUM \stemDown kdh_\TEK
+    \stemUp kdl4^\TE \stemDown kdh_\KE \stemUp kdl2^\DUM
 
-    \stemUp kdl2^\TA \stemDown kdh2_\HEK \bar "!"
+    \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK
 
-    kdl4^\TEK \stemDown kdh_\KA \stemUp kdl4^\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemUp kdl4^\TE \stemDown kdh_\KE}
   }
 }
 
-muhammesPatternVel = {
+muhammesPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE \bar "!" kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA \bar "!"
-
-    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \bar "!"
-    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA \bar "!" \break
-    kdh2_\HEK kdh_\HEK \bar "!" kdh4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA \bar "!"
+    \stemUp kdl4^\DUM kdl4^\DUM \stemDown kdh4_\TEK kdh8_\TE kdh8_\KE
+    kdh4_\TEK kdh4_\KA kdh4_\TEK kdh4_\KA
+    \stemUp kdl4^\DU \stemDown kdh_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME
+    kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA
+    \repeat unfold 2 {\stemDown <kdh kdl>2_\HEK}
+    \stemDown <kdh kdl>4_\HEK kdh8_\TEK kdh_\KE kdh4_\TEK kdh_\KA
     \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl8^\DU \stemDown kdh8_\ME
-    \repeat unfold 2 {kdh8_\TE kdh8_\KE} \bar "!"
+    \repeat unfold 2 {kdh8_\TE kdh8_\KE}
     kdh4_\TEK kdh_\KA kdh_\TEK kdh_\KA
   }
 }
@@ -1579,15 +1334,8 @@ muhammessixteentwobars = {
   \repeat unfold 3 {s4*8 \nibar "!" } s4*8 \nibar "|"
 }
 
-muhammessixteentwoPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
-
 muhammessixteentwoPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-
     \repeat unfold 4 {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
@@ -1599,7 +1347,6 @@ muhammessixteentwoPattern = {
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
       \bar "!" \break
     }
-    \bar "|"
   }
 }
 
@@ -1610,15 +1357,8 @@ muhammessixteenfourbars = {
   \repeat unfold 3 {s4*4 \nibar "!" } s1 \nibar "|"
 }
 
-muhammessixteenfourPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
-
 muhammessixteenfourPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-
     \repeat unfold 4 {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
@@ -1630,7 +1370,6 @@ muhammessixteenfourPattern = {
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
       \bar "!" \break
     }
-    \bar "|"
   }
 }
 
@@ -1645,14 +1384,8 @@ nimsakilbars = {
   s1 \nibar "|"
 }
 
-nimsakilPatternMidi = { b1 b2 d2 b1 b2 d2 b2 d b1 b2 d2 b4 d4 b8 d8 b4 d1 d1 b1 b1 d1 b1 d1 d1 b1 b2 d2 b2 b2 d2 b4 d4 b2 d2 b4 d4 b2 d2 d2 b4 d4 b4 d4 }
-
 nimsakilPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 48/2
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
@@ -1663,7 +1396,6 @@ nimsakilPattern = {
     \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
-    \bar "|"
   }
 }
 
@@ -1679,15 +1411,8 @@ remelbars = {
   s4*8 \nibar "|"
 }
 
-remelPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
-
 remelPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-
     \repeat unfold 4 {
 
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
@@ -1699,7 +1424,6 @@ remelPattern = {
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
       \bar "!" \break
     }
-    \bar "|"
   }
 }
 
@@ -1707,7 +1431,6 @@ remelPattern = {
 remelfour = {\time 28/4 \SenginSemaibeams}
 
 remelfourbars = {
-  % 4 6 4 6 4 4
   s1 \nibar "!"
   s1. \nibar "!"
   s1 \nibar "!"
@@ -1716,17 +1439,9 @@ remelfourbars = {
   s1 \nibar "|"
 }
 
-remelfourPatternMidi = { \repeat unfold 2 {\repeat unfold 4 {b8 d16 d d8 d b16 d b8 d d16 d } } }
-
 remelfourPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 32/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-
     \repeat unfold 4 {
-
       \stemUp kdl8^\DUM \stemDown kdh16_\TE \stemDown kdh_\KE \stemDown kdh8_\TE
       \stemDown kdh_\KA \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE \bar "!"
@@ -1736,7 +1451,6 @@ remelfourPattern = {
       \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
       \bar "!" \break
     }
-    \bar "|"
   }
 }
 
@@ -1757,14 +1471,8 @@ sakilbars = {
   s1 \nibar "|"
 }
 
-sakilPatternMidi = { b1 b2 d2 b1 b2 d2 b2 d b1 b2 d2 b4 d4 b8 d8 b4 d1 d1 b1 b1 d1 b1 d1 d1 b1 b2 d2 b2 b2 d2 b4 d4 b2 d2 b4 d4 b2 d2 d2 b4 d4 b4 d4 }
-
 sakilPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 48/2
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
@@ -1775,24 +1483,19 @@ sakilPattern = {
     \stemUp kdl2^\DUM \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \bar "!"
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
-    \bar "|"
   }
 }
 
 %%%%%%%%%%% semai %%%%%%%%%%%%%
 semai = {\time 3/4 \semaibeams}
 
-semaiPatternMidi = { b4 d d }
+semaibarsUsul = {
+  \time 3/4 s2. \nibar ""
+}
 
-semaiPattern = {
-  \bellstaff
+semaiPatternOne = {
   \drummode {
-    \autoBeamOff
-    \time 3/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-
     \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh_\TEK
-    \bar "|"
   }
 }
 
@@ -1801,51 +1504,43 @@ SenginSemai = {\time 6/4 \SenginSemaibeams }
 
 SenginSemaiEight = {\time 6/8 \SenginSemaiEightbeams }
 
-SenginSemaiPatternMidi = { b4 d d b4 d2 }
-
 SenginSemaiPattern = {
-  \bellstaff
   \drummode {
-    \autoBeamOff
-    \time 6/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh_\TEK \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh2_\TEK
-    \bar "|"
   }
 }
 
 %%%%%%%%%%% nim sofyan %%%%%%%%%%%%%
 nimsofyan = {\time 2/4  }
 
-nimsofyanPatternMidi = { b4 d }
+nimsofyanbarsUsul = {
+  \time 2/4 s2 \nibar ""
+}
 
-nimsofyanPattern = {
-  \bellstaff
+nimsofyanPatternOne = {
   \drummode {
-    \autoBeamOff
-    \time 2/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK
-    \bar "|"
   }
 }
 
 %%%%%%%%%%% sofyan %%%%%%%%%%%%%
 sofyan = {\numericTimeSignature \time 4/4 \sofyanbeams }
 
-sofyanPatternMidi = { b4 d8 d d4 d }
+sofyanbarsUsul = {
+  \time 4/4 s1 \nibar ""
+}
 
-sofyanPattern = {
-  \bellstaff
+sofyanPatternOne = {
   \drummode {
-    \autoBeamOff
-    \numericTimeSignature
-    \time 4/4
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
+    \stemUp kdl2^\DUM \stemDown kdh4_\TE \stemDown kdh4_\KE
+  }
+}
+
+sofyanPatternVelOne = {
+  \drummode {
     \stemUp kdl4^\DUM \stemDown kdh8_\TE \stemDown kdh_\KE
     \stemDown kdh4_\TEK \stemDown kdh_\KA
-    \bar "|"
   }
 }
 
@@ -1854,35 +1549,41 @@ turkaksagi = {\time 5/8 \turkaksagibeams }
 
 turkaksagibars = { s2. \bar "|" }
 
-turkaksagiPatternMidi = { b8 d d b8 d4 }
+turkaksagibarsUsul = {
+  \time 5/8 s4 \nibar "!" s4. \nibar ""
+}
 
-turkaksagiPattern = {
-  \bellstaff
+turkaksagiPatternOne = {
   \drummode {
-    \autoBeamOff
-    \numericTimeSignature
-    \time 5/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl4^\DUM \stemDown kdh_\TEK kdh8_\TEK
-    \bar "|"
+  }
+}
+
+turkaksagiPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh16_\TE kdh_\KE
+    \stemDown kdh8_\TEK kdh_\KA kdh16_\TE kdh_\KE
   }
 }
 
 %%%%%%%%%%% YurukSemai %%%%%%%%%%%%%
 YurukSemai = {\time 6/8 \YurukSemaibeams }
 
-YurukSemaiPatternMidi = { b8 d d b8 d4 }
+YurukSemaibarsUsul = {
+  \time 6/8 s4. \nibar "!" s4. \nibar ""
+}
 
-YurukSemaiPattern = {
-  \bellstaff
+YurukSemaiPatternOne = {
   \drummode {
-    \autoBeamOff
-    \numericTimeSignature
-    \time 6/8
-    \override TextScript #'Y-extent = #'(-1.5 . 1.5)
     \stemUp kdl8^\DUM \stemDown kdh_\TEK kdh_\TEK
     \stemUp kdl8^\DUM \stemDown kdh4_\TEK
-    \bar "|"
+  }
+}
+
+YurukSemaiPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK kdh_\KA
+    \stemUp kdl16^\DU \stemDown kdh_\ME \stemDown kdh8_\TEK \stemDown kdh8_\KA
   }
 }
 
@@ -1891,20 +1592,12 @@ zencir = {
   \time 120/4 \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
 }
 
-zencirPatternMidi = {
-  \cifteduyekPatternMidi
-  \fahtePatternMidi
-  \cenberPatternMidi
-  \devrikebirPatternMidi
-  \berefsanPatternMidi
-}
-
 zencirPatternVel = {
   \drummode {
     \cifteduyekPatternVel
     \fahtePatternVelOne
-    \cenberPatternVel
-    \devrikebirPatternVel
+    \cenberPatternVelOne
+    \devrikebirPatternVelOne
     \berefsanPatternVel
   }
 }
@@ -1912,12 +1605,7 @@ zencirPatternVel = {
 %%%%%%%%%%% zeybek %%%%%%%%%%%%%
 zeybek = {\time 9/8 \zeybekbeams }
 
-zeybekPatternMidi = { b4 d d b4 d2 }
-
 zeybekPattern = {
-  \set Staff.instrumentName = \markup { \center-align { "9" \line { "8" } } }
-  \time 9/8
-  \override Score.TimeSignature #'stencil = ##f
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
   \stemUp d4^\DUM \stemDown b2_\TEK \bar "|"
 }
@@ -1935,14 +1623,6 @@ darbeynbars = {
   \time 32/4 \muhammesbars
 }
 
-darbeynPatternMidi = {
-  \cifteduyekPatternMidi
-  \fahtePatternMidi
-  \cenberPatternMidi
-  \devrikebirPatternMidi
-  \berefsanPatternMidi
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% RHYTHMIC SLASHES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1957,16 +1637,16 @@ rs = {
 
 % Function to print a specified number of slashes
 comp = #(define-music-function (parser location count) ( integer?)
-  #{
-    \override Rest #'stencil = #ly:percent-repeat-item-interface::beat-slash
-    \override Rest #'thickness = #0.48
-    \override Rest #'slope = #1.7
-    \repeat unfold $count { r4 }
-    \revert Rest #'stencil
-  #}
-)
+          #{
+            \override Rest #'stencil = #ly:percent-repeat-item-interface::beat-slash
+            \override Rest #'thickness = #0.48
+            \override Rest #'slope = #1.7
+            \repeat unfold $count { r4 }
+            \revert Rest #'stencil
+            #}
+            )
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% END
+          %% END
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -35,7 +35,7 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
 
 %%%%% MARGINS...IMPORTANT FOR MY BOOK, TURN ON FOR letter BOOK!!!
   #(set-paper-size "letter")
-
+  %#(set-default-paper-size "letter" 'landscape)
   %{
     %line-width = 184.15\mm
     line-width = 188.00\mm %for Letter
