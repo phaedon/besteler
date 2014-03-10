@@ -143,6 +143,28 @@ Aksakbeams = {
                                                         )))                     %close all entries
 }
 
+evferbeams = {
+  % BEAMING FOR 9/8
+  \set Timing.beatStructure = #'(2 2 2 3)
+  \set Timing.beamExceptions =
+  #'(                         ;start of alist
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
+}
+
+raksaksagibeams = {
+  % BEAMING FOR 9/8
+  \set Timing.beatStructure = #'(2 2 2 3)
+  \set Timing.beamExceptions =
+  #'(                         ;start of alist
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
+}
+
 AksakSemaibeams = {
   % BEAMING FOR 10/8
   \set Timing.beatStructure = #'(2 1 2 2 2 1)
@@ -193,6 +215,12 @@ longbarbeams = {
                                                         ((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
                                                         )))                     %close all entries
 }
+
+musemmenbeams = {
+  % BEAMING FOR 8/8
+  \set Timing.beatStructure = #'(3 2 3)
+}
+
 
 nimberefsanbeams = {
   % BEAMING FOR NIMBEREFSAN USUL
@@ -400,9 +428,13 @@ agirAksak = {\time 9/4 \longbarbeams }
 
 agirAksakbars = { s4*9 \bar "|" }
 
-agirAksakPattern = {
+agirAksakbarsUsul = {
+   \time 9/4 s1 \nibar "!" s2 s2 s4 \nibar ""
+}
+
+agirAksakPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "!"
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA 
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK
     \stemDown kdh4_\TEK
   }
@@ -410,9 +442,9 @@ agirAksakPattern = {
 
 agirAksakPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA \bar "!"
-    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown <kdh kdl>2_\HEK
-    \stemDown kdh4_\TEK
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh2_\TEK
+    \stemDown kdh8_\TE kdh8_\KE
   }
 }
 
@@ -445,7 +477,6 @@ agirsakilbars = {
 }
 
 agirsakilPattern = {
-  
   \drummode {
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
     \stemUp kdl1^\DUM \stemUp kdl2^\TE \stemDown kdh2_\KE \stemUp kdl2^\TE \stemDown kdh2_\KE \bar "!"
@@ -462,6 +493,89 @@ agirsakilPattern = {
 
 %%%%%%%%%%% Aksak %%%%%%%%%%%%%
 Aksak = {\time 9/8 \Aksakbeams }
+
+AksakbarsUsul = {
+   \time 9/8 s2 \nibar "!" s4 s4. \nibar ""
+}
+
+AksakPatternOne = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh8_\KE
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK
+  }
+}
+
+AksakPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh16_\TE kdh_\KE kdh8_\TEK kdh_\KA
+    
+    \stemUp kdl16^\DU \stemDown kdh_\ME
+    \stemUp kdl8^\DUM
+    \stemDown kdh4_\TEK kdh16_\TE kdh_\KE
+  }
+}
+
+CifteSofyanPatternOne = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemDown kdh_\TEK
+    \stemUp kdl4^\DUM \stemDown kdh4._\TEK
+  }
+}
+
+CifteSofyanPatternVelOne = {
+  \drummode {
+    %\stemUp kdl8^\DUM \stemDown kdh16_\TE kdh_\KE kdh8_\TEK kdh_\KA
+    
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME kdh_\TE kdh_\KE }
+    kdh16_\TE kdh_\KE
+  }
+}
+
+%%%%%%%%%%% evfer %%%%%%%%%%%%%
+evfer = {\time 9/8 \evferbeams }
+
+evferbarsUsul = {
+   \time 9/8 s2 \nibar "!" s4 s4. \nibar ""
+}
+
+evferPatternOne = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh8_\KE
+    \stemUp kdl4^\DUM \stemDown kdh8_\TEK \stemDown kdh4_\TEK
+  }
+}
+
+evferPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh16_\TE kdh_\KE kdh8_\TEK kdh_\KA
+    
+    \stemUp kdl16^\DU \stemDown kdh_\ME
+    \stemUp kdl8^\DUM
+    \stemDown kdh8_\TEK kdh4_\TEK
+  }
+}
+
+%%%%%%%%%%% raksaksagi %%%%%%%%%%%%%
+raksaksagi = {\time 9/8 \raksaksagibeams }
+
+raksaksagibarsUsul = {
+   \time 9/8 s4 s4. \nibar "!" s2 \nibar ""
+}
+
+raksaksagiPatternOne = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemDown kdh4._\TEK
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK
+  }
+}
+
+raksaksagiPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DU \stemDown kdh_\ME kdh_\TE kdh_\KE kdh16_\TE kdh_\KE
+    
+    \stemUp kdl8^\DU \stemDown kdh_\ME kdh8_\TE kdh_\KE
+  }
+}
 
 %%%%%%%%%%% Aksak semai %%%%%%%%%%%%%
 AksakSemai = {\time 10/8 \AksakSemaibeams }
@@ -988,10 +1102,29 @@ muzaafdevrikebirPatternOne = {
 %%%%%%%%%%% devrihindi %%%%%%%%%%%%%
 devrihindi = {\time 7/8 \devrihindibeams }
 
-devrihindiPattern = {
+devrihindibarsUsul = {
+  \time 7/8 s4. \nibar "!" s2 \nibar ""
+}
+
+devrihindiPatternOne = {
   \drummode {
-    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA \bar "!"
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA
+    \stemUp kdl4^\DUM \stemDown kdh_\TEK
+  }
+}
+
+devrihindiPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemDown kdh_\TEK \stemDown kdh_\KA
+  }
+}
+
+devrihindiPatternVelTwo = {
+  \drummode {
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh_\KA
+    \stemUp kdl16^\DU \stemDown kdh_\ME
+    \stemUp kdl8^\DUM \stemDown kdh_\TEK \stemDown kdh16_\TE \stemDown kdh_\KE
   }
 }
 
@@ -1021,31 +1154,62 @@ bestedevrirevanPattern = {
 %%%%%%%%%%% devrituranbars %%%%%%%%%%%%%
 devrituran = {\time 7/8 \devrituranbeams }
 
-devrituranPattern = {
+devrituranbarsUsul = {
+  \time 7/8 s2 \nibar "!" s4. \nibar ""
+}
+
+devrituranPatternOne = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh4._\TEK
   }
 }
 
-SdevrituranPattern = {
+devrituranPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh4._\TEK
+    \stemUp kdl8^\DU \stemDown kdh_\ME
+    \repeat unfold 2 {\stemDown kdh_\TE \stemDown kdh_\KE}
+    \stemDown kdh16_\TE \stemDown kdh_\KE
   }
 }
 
 %%%%%%%%%%% duyek %%%%%%%%%%%%%
 duyek = { \time 8/8 \duyekbeams }
 
-duyekPattern = {
+duyekbarsUsul = {
+  \time 8/8 s2 \nibar "!" s2 \nibar ""
+}
+
+duyekPatternOne = {
   \drummode {
     \stemUp kdl8^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK \stemUp kdl4^\DUM \stemDown kdh4_\TEK
   }
 }
 
-duyekPatternVel = {
+duyekPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh8_\KE kdh4_\TEK kdh4_\KA
-    \stemUp kdl8^\DU \stemDown kdh8_\ME \stemUp kdl4^\DUM \stemDown kdh4_\HEK \stemDown kdh8_\TE kdh8_\KE
+    \stemUp kdl8^\DUM \stemDown kdh16_\TE kdh_\KE kdh8_\TEK kdh8_\KA
+    \stemUp kdl16^\DU \stemDown kdh_\ME \stemUp kdl8^\DUM \stemDown kdh_\HEK \stemDown kdh16_\TE kdh_\KE
+  }
+}
+
+%%%%%%%%%%% musemmen %%%%%%%%%%%%%
+musemmen = { \time 8/8 \musemmenbeams }
+
+musemmenbarsUsul = {
+
+   \time 8/8 s4. \nibar "!" s4 s4. \nibar ""
+}
+
+musemmenPatternOne = {
+  \drummode {
+    \stemUp kdl4.^\DUM \stemDown kdh4_\TEK \stemDown kdh4._\TEK
+  }
+}
+
+musemmenPatternVelOne = {
+  \drummode {
+    \stemUp kdl8^\DUM \repeat unfold 3 {\stemDown kdh8_\TEK kdh8_\KA}
+    \stemDown kdh16_\TE kdh_\KE
   }
 }
 
