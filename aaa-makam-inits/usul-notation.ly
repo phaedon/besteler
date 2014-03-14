@@ -1175,6 +1175,10 @@ devrituranPatternVelOne = {
 %%%%%%%%%%% duyek %%%%%%%%%%%%%
 duyek = { \time 8/8 \duyekbeams }
 
+duyekbars = {
+  s2 \nibar "!" s2 \nibar "|"
+}
+
 duyekbarsUsul = {
   \time 8/8 s2 \nibar "!" s2 \nibar ""
 }
@@ -1231,6 +1235,61 @@ evsatPattern = {
     \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA \bar "!" \break
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA \bar "!"
     \stemDown kdh4_\TEK \stemDown kdh_\KA \stemDown kdh4_\TEK \stemDown kdh_\KA
+  }
+}
+
+%%%%%%%%%%% lenkfahte %%%%%%%%%%%%%
+lenkfahte = {\time 10/4 \SenginSemaibeams }
+
+lenkfahtebars = {
+  s4*6 \nibar "!"
+  s1 \nibar "|"
+}
+
+lenkfahteeight = {\time 10/8 }
+
+lenkfahteeightbars = {
+  s8*6 \nibar "!"
+  s2 \nibar "|"
+}
+
+lenkfahtebarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "20" "4" "4" )
+
+  \time 4/4 s1 \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 6/4 s1. \nibar "!"
+  \time 4/4 s1 \nibar ""
+}
+
+lenkfahtePatternOne = {
+  \drummode {
+    \stemUp kdl2^\DUM \repeat unfold 2 {kdl4^\DUM}
+    \repeat unfold 3 {\stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemDown kdh2_\TA \stemDown <kdh kdl>2_\HEK
+    \repeat unfold 2 {\stemUp kdl4^\TE \stemDown kdh_\KE}
+  }
+}
+
+lenkfahtePatternVelOne = {
+  \drummode {
+    \stemUp kdl4^\DUM \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemUp kdl4^\DUM
+    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+    \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TE \stemDown kdh_\KA
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+  }
+}
+
+lenkfahtePatternVelTwo = {
+  \drummode {
+    \repeat unfold 2 {\stemUp kdl4^\DUM} \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+    \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME}
+    \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE} \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \repeat unfold 2 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
+
   }
 }
 
