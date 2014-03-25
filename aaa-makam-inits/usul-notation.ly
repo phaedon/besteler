@@ -994,9 +994,9 @@ devrikebirPatternVelOne = {
 devrikebirPatternVelTwo = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown kdh2_\TEK } %\break
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown <kdh kdl>2_\HEK } %\break
 
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemDown <kdh kdl>4_\HEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
     \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
@@ -1007,9 +1007,9 @@ devrikebirPatternVelTwo = {
 devrikebirPatternVelThree = {
   \drummode {
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \stemDown kdh_\TEK
-    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown kdh2_\TEK } %\break
+    \stemDown kdh8_\TE \stemDown kdh_\KE \stemUp kdl4^\DUM \repeat unfold 2 {\stemDown <kdh kdl>2_\TEK } %\break
 
-    \stemDown kdh4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
+    \stemDown <kdh kdl>4_\TEK \stemDown kdh8_\TE \stemDown kdh_\KE \stemDown kdh4_\TEK \stemDown kdh_\KA
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
     \repeat unfold 2 {\stemDown kdh8_\TE \stemDown kdh_\KE}
     \repeat unfold 2 {\stemUp kdl8^\DU \stemDown kdh_\ME }
