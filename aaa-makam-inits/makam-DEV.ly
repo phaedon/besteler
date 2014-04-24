@@ -11,6 +11,7 @@
 #(define-public EKSIK-UC 6/18)
 
 #(define-public KOMA 1/9)
+#(define-public KOMA 7/18)
 #(define-public BAKIYE 4/9)
 #(define-public KUCUK 5/9)
 #(define-public BUYUKMUCENNEB 8/9)
@@ -130,6 +131,7 @@ makamGlyphs = #`((1 . "accidentals.doublesharp")
                  (1/9 . "accidentals.sharp.slashslash.stem")
                  (0 . "accidentals.natural")
                  (-1/9 . "accidentals.mirroredflat")
+                 (-7/18 . "accidentals.mirroredflat")
                  (-5/18 . ,(if eksikMirroredSlashedFlat
                                "accidentals.mirroredflat.backslash"
                                "accidentals.mirroredflat"))
