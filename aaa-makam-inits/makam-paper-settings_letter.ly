@@ -34,9 +34,9 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
 
 
 %%%%% MARGINS...IMPORTANT FOR MY BOOK, TURN ON FOR letter BOOK!!!
-  #(set-paper-size "letter")
+  %#(set-paper-size "letter")
   %#(set-default-paper-size "letter" 'landscape)
-  %{
+  
     %line-width = 184.15\mm
     line-width = 188.00\mm %for Letter
     %paper-width = 184.15\mm
@@ -51,7 +51,7 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
     right-margin = 0.0\mm
     head-separation = 4\mm %default is 4\mm
     foot-separation = 0\mm %default is 4\mm
-  %}
+  
 
   oddFooterMarkup=##f
   oddHeaderMarkup=##f
