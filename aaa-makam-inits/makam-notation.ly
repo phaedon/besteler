@@ -303,6 +303,22 @@ SpanTextUp = #(define-music-function (parser location spantext) (string?)
 \once \override TextSpanner #'font-shape = #'italic
 #})
 
+xSpanTextUp = #(define-music-function (parser location spantext) (string?) 
+  #{ 
+\override TextSpanner #'direction = #UP
+\once \override TextSpanner #'(bound-details left padding) = #-0.7
+\once \override TextSpanner #'staff-padding = #6
+\once \override TextSpanner
+    #'(bound-details left text) = \markup { \small { \concat { $spantext } } }
+\once \override TextSpanner #'style = #'line
+\once \override TextSpanner
+    #'(bound-details left stencil-align-dir-y) = #LEFT
+\once \override TextSpanner #'(bound-details right text) =
+    \markup { \draw-line #'(0 . -1) }
+\once \override TextSpanner #'(bound-details right padding) = #-1
+\once \override TextSpanner #'font-shape = #'italic
+#})
+
 SpanTextDown = #(define-music-function (parser location spantext) (string?) 
   #{ 
 \override TextSpanner #'direction = #DOWN
