@@ -473,7 +473,7 @@ agirsakilbars = {
   s4*8 \nibar "!"
   s4*8 \nibar "!"
   s4*8 \nibar "!"
-  s4*8 \nibar "||"
+  s4*8 \nibar "|"
 }
 
 agirsakilPattern = {
@@ -489,6 +489,26 @@ agirsakilPattern = {
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl2^\DUM \bar "!"
     \stemDown kdh2_\TA \stemDown kdh2_\HEK \stemUp kdl4^\TE \stemDown kdh4_\KE \stemUp kdl4^\TE \stemDown kdh4_\KE
   }
+}
+
+%%%%%%%%%%% agirsakil %%%%%%%%%%%%%
+darbifetih = {\time 88/4 \longbarbeams}
+
+darbifetihbars = {
+  s4*4 \nibar "!"
+  s4*6 \nibar "!"
+  \repeat unfold 4 {s4*4 \nibar "!"}
+  \repeat unfold 2 {s4*6 \nibar "!"}
+  \repeat unfold 2 {s4*4 \nibar "!"}
+  s4*6 \nibar "!"
+  s4*4 \nibar "!"
+
+  \repeat unfold 7 {s4*4 \nibar "!"}
+
+  s4*4 \nibar "|"
+}
+
+darbifetihPattern = {
 }
 
 %%%%%%%%%%% Aksak %%%%%%%%%%%%%
@@ -1468,7 +1488,7 @@ havibars = {
   \repeat unfold 2 {s1 \nibar "!" }
   \repeat unfold 2 {s1. \nibar "!"}
   \repeat unfold 3 { s1 \nibar "!" s1 \nibar "!" s1 \nibar "!" }
-  s1 \nibar "!" s1 \nibar "||"
+  s1 \nibar "!" s1 \nibar "|"
 }
 
 haviPattern = {

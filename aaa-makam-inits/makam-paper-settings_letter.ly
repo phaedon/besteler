@@ -37,6 +37,7 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
   %#(set-paper-size "letter")
   %#(set-default-paper-size "letter" 'landscape)
   
+  
     %line-width = 184.15\mm
     line-width = 188.00\mm %for Letter
     %paper-width = 184.15\mm
@@ -99,20 +100,6 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
       }
     }
   }
-
-  bookTitleMarkupX =\markup {
-    \fill-line {
-      \line { William S. Gilbert }
-      \center-column {
-        \huge \smallCaps "The Mikado"
-        or
-        \smallCaps "The Town of Titipu"
-      }
-      \line { Sir Arthur Sullivan }
-    }
-  }
-
-
 
   oddHeaderMarkup = \markup
   \fill-line
