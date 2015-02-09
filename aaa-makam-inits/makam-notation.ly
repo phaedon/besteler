@@ -219,7 +219,7 @@ CustomSegno = #(define-music-function (parser location markp marktext) (string? 
     \once \override Score.RehearsalMark #'Y-offset = #1.0
     \once \override Score.RehearsalMark #'font-size = #'0.0
     \mark \markup {\normalsize \musicglyph #"scripts.segno"
-      \hspace #0.2 \raise #-1.5 $markp \hspace #0.2 \raise #-1.5 $marktext }
+      \hspace #0.2 \raise #-1.5 $markp \hspace #0.2 \raise #-1.5 \italic $marktext }
 #})
 
 CustomSegnoBox = #(define-music-function (parser location markp marktext) (string? string?) 
