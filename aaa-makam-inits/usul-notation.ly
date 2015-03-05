@@ -282,6 +282,17 @@ sofyanbeams = {
                                                         )))                     %close all entries
 }
 
+agirsofyanbeams = {
+  % BEAMING FOR 4/2
+  \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1)
+  \set Timing.beamExceptions =
+  #'(                         ;start of alist
+                              (end .                   ;entry for end of beams
+                                (                       ;start of alist of end points
+                                                        ((1 . 8) . (2 2 2 2 2 2 2 2))   ;rule for 1/32 beams -- end each 1/16
+                                                        )))                     %close all entries
+}
+
 SixteenTwobeams = {
   % BEAMING FOR 16/2
   \set Timing.beatStructure = #'(1 1 1 1 1 1)
@@ -417,6 +428,11 @@ KA=\markup {\fontsize #-2 \halign #-.4 \center-align {"Kâ"}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% BEGIN USUL DEFINITIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SpacingSectionTWEAK = {
+  \newSpacingSection
+}
+
 UsulClef =  {
   \clef percussion
   \autoBeamOff
@@ -424,7 +440,7 @@ UsulClef =  {
 }
 
 %%%%%%%%%%% agirAksak %%%%%%%%%%%%%
-agirAksak = {\time 9/4 \longbarbeams }
+agirAksak = {\time 9/4 \longbarbeams \SpacingSectionTWEAK}
 
 agirAksakbars = { s4*9 \bar "|" }
 
@@ -434,7 +450,7 @@ agirAksakbarsUsul = {
 
 agirAksakPatternOne = {
   \drummode {
-    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA 
+    \stemUp kdl2^\DUM kdl4^\TE \stemDown kdh_\KA \bar "!"
     \stemUp kdl2^\DUM \stemDown kdh2_\TEK
     \stemDown kdh4_\TEK
   }
@@ -442,14 +458,14 @@ agirAksakPatternOne = {
 
 agirAksakPatternVelOne = {
   \drummode {
-    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA
+    \stemUp kdl4^\DUM \stemDown kdh8_\TE kdh_\KE kdh4_\TEK kdh_\KA \bar "!"
     \stemUp kdl8^\DU \stemDown kdh_\ME \stemUp kdl4^\DUM \stemDown kdh2_\TEK
     \stemDown kdh8_\TE kdh8_\KE
   }
 }
 
 %%%%%%%%%%% agirduyek %%%%%%%%%%%%%
-agirduyek = {\time 8/4 }
+agirduyek = {\time 8/4 \SpacingSectionTWEAK}
 
 agirduyekbars = { s1 \nibar "!" s1 \nibar "|" }
 
@@ -461,7 +477,7 @@ agirduyekPattern = {
 }
 
 %%%%%%%%%%% agirsakil %%%%%%%%%%%%%
-agirsakil = {\time 48/2 \longbarbeams}
+agirsakil = {\time 48/2 \longbarbeams \SpacingSectionTWEAK}
 
 agirsakilbars = {
   s4*8 \nibar "!"
@@ -492,7 +508,7 @@ agirsakilPattern = {
 }
 
 %%%%%%%%%%% agirsakil %%%%%%%%%%%%%
-darbifetih = {\time 88/4 \longbarbeams}
+darbifetih = {\time 88/4 \longbarbeams \SpacingSectionTWEAK}
 
 darbifetihbars = {
   s4*4 \nibar "!"
@@ -512,7 +528,7 @@ darbifetihPattern = {
 }
 
 %%%%%%%%%%% Aksak %%%%%%%%%%%%%
-Aksak = {\time 9/8 \Aksakbeams }
+Aksak = {\time 9/8 \Aksakbeams \SpacingSectionTWEAK}
 
 AksakbarsUsul = {
    \time 9/8 s2 \nibar "!" s4 s4. \nibar ""
@@ -552,7 +568,7 @@ CifteSofyanPatternVelOne = {
 }
 
 %%%%%%%%%%% evfer %%%%%%%%%%%%%
-evfer = {\time 9/8 \evferbeams }
+evfer = {\time 9/8 \evferbeams \SpacingSectionTWEAK}
 
 evferbarsUsul = {
    \time 9/8 s2 \nibar "!" s4 s4. \nibar ""
@@ -576,7 +592,7 @@ evferPatternVelOne = {
 }
 
 %%%%%%%%%%% raksaksagi %%%%%%%%%%%%%
-raksaksagi = {\time 9/8 \raksaksagibeams }
+raksaksagi = {\time 9/8 \raksaksagibeams \SpacingSectionTWEAK}
 
 raksaksagibarsUsul = {
    \time 9/8 s4 s4. \nibar "!" s2 \nibar ""
@@ -598,11 +614,11 @@ raksaksagiPatternVelOne = {
 }
 
 %%%%%%%%%%% Aksak semai %%%%%%%%%%%%%
-AksakSemai = {\time 10/8 \AksakSemaibeams }
+AksakSemai = {\time 10/8 \AksakSemaibeams \SpacingSectionTWEAK}
 
 AksakSemaiPattern = {
   \drummode {
-    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA
+    \stemUp kdl4^\DUM \stemUp kdl8^\TE \stemDown kdh4_\KA \bar "!"
     \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh8_\TEK
   }
 }
@@ -615,7 +631,7 @@ AksakSemaiPatternVel = {
 }
 
 %%%%%%%%%%% ayindevrirevani %%%%%%%%%%%%%
-ayindevrirevani = {\time 14/8 \ayindevrirevanibeams }
+ayindevrirevani = {\time 14/8 \ayindevrirevanibeams \SpacingSectionTWEAK}
 
 ayindevrirevanibars = {
   s8*3 \nibar "!"
@@ -643,7 +659,7 @@ ayindevrirevaniPatternTwo = {
 }
 
 %%%%%%%%%%% berefsan %%%%%%%%%%%%%
-berefsan = {\time 32/4 \SenginSemaibeams }
+berefsan = {\time 32/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 berefsanbars = {
   s1. \nibar "!"
@@ -702,7 +718,7 @@ berefsanPatternVel = {
 }
 
 %%%%%%%%%%% nimberefsan %%%%%%%%%%%%%
-nimberefsan = {\time 16/8 \nimberefsanbeams }
+nimberefsan = {\time 16/8 \nimberefsanbeams \SpacingSectionTWEAK}
 
 nimberefsanbars = {
   s8*3 \nibar "!"
@@ -724,7 +740,7 @@ nimberefsanPattern = {
 }
 
 %%%%%%%%%%% nimberefsanfour %%%%%%%%%%%%%
-nimberefsanfour = {\time 16/4 \sofyanbeams }
+nimberefsanfour = {\time 16/4 \sofyanbeams \SpacingSectionTWEAK}
 
 nimberefsanfourbars = {
   s4*3 \nibar "!"
@@ -746,7 +762,7 @@ nimberefsanfourPattern = {
 }
 
 %%%%%%%%%%% cenber %%%%%%%%%%%%%
-cenber = {\time 24/4 \SenginSemaibeams}
+cenber = {\time 24/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 cenberbars = {
   s1 \nibar "!"
@@ -819,7 +835,7 @@ cenberPatternVelTwo = {
   }
 }
 
-cenbertwo = {\time 24/2 \SixTwobeams}
+cenbertwo = {\time 24/2 \SixTwobeams \SpacingSectionTWEAK}
 
 cenbertwobars = {
   s2*2 \nibar ""  s2*2 \nibar "!"
@@ -831,7 +847,7 @@ cenbertwobars = {
 
 %%%%%%%%%%% agircenber 48/4 %%%%%%%%%%%%%
 %agircenber = {\time 48/4 \SenginSemaibeams}
-agircenber = {\time 24/2 \longbarbeams}
+agircenber = {\time 24/2 \longbarbeams \SpacingSectionTWEAK}
 
 agircenberbars = {
   s1 \nibar "" s1 \nibar "!"
@@ -884,7 +900,7 @@ cenberagirPattern = {
 }
 
 %%%%%%%%%%% cifteduyek %%%%%%%%%%%%%
-cifteduyek = { \time 16/4 \cifteduyekbeams }
+cifteduyek = { \time 16/4 \cifteduyekbeams \SpacingSectionTWEAK}
 
 cifteduyekbars = {
   \repeat unfold 3 {s1 \nibar "!" }
@@ -913,7 +929,7 @@ cifteduyekPatternVel = {
 }
 
 %%%%%%%%%%% curcuna %%%%%%%%%%%%%
-curcuna = { \time 10/8 \curcunabeams }
+curcuna = { \time 10/8 \curcunabeams \SpacingSectionTWEAK}
 
 curcunabars = {
   s8*10 \nibar "|"
@@ -937,7 +953,7 @@ curcunaPatternTwo = {
   }
 }
 
-curcunasixteen = { \time 10/16 \curcunasixteenbeams }
+curcunasixteen = { \time 10/16 \curcunasixteenbeams \SpacingSectionTWEAK}
 
 curcunasixteenPattern = {
   \drummode {
@@ -947,7 +963,7 @@ curcunasixteenPattern = {
 }
 
 %%%%%%%%%%% devrikebir %%%%%%%%%%%%%
-devrikebir = { \time 28/4 \SenginSemaibeams}
+devrikebir = { \time 28/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 devrikebirbars = {
   s1. \nibar "!"
@@ -1039,7 +1055,7 @@ devrikebirPatternVelThree = {
 
 %%%%%%%%%%% devrikebirfourteen 14/4 %%%%%%%%%%%%%
 devrikebirfourteen = {
-  \time 14/4 %\SenginSemaibeams
+  \time 14/4 \SpacingSectionTWEAK %\SenginSemaibeams
 }
 
 devrikebirfourteenbars = {
@@ -1066,7 +1082,7 @@ devrikebirfourteenPattern = {
 }
 
 %%%%%%%%%%% muzaafdevrikebir %%%%%%%%%%%%%
-muzaafdevrikebir = { \time 28/4 \sofyanbeams }
+muzaafdevrikebir = { \time 28/4 \sofyanbeams \SpacingSectionTWEAK}
 
 muzaafdevrikebirbars = {
   s1 \nibar "!"
@@ -1120,7 +1136,7 @@ muzaafdevrikebirPatternOne = {
 }
 
 %%%%%%%%%%% devrihindi %%%%%%%%%%%%%
-devrihindi = {\time 7/8 \devrihindibeams }
+devrihindi = {\time 7/8 \devrihindibeams \SpacingSectionTWEAK}
 
 devrihindibarsUsul = {
   \time 7/8 s4. \nibar "!" s2 \nibar ""
@@ -1149,7 +1165,7 @@ devrihindiPatternVelTwo = {
 }
 
 %%%%%%%%%%% bestedevrirevan %%%%%%%%%%%%%
-bestedevrirevan = { \time 26/4 \SenginSemaibeams}
+bestedevrirevan = { \time 26/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 bestedevrirevanbars = {
   s4*5 \nibar "!"
@@ -1172,7 +1188,7 @@ bestedevrirevanPattern = {
 }
 
 %%%%%%%%%%% devrituranbars %%%%%%%%%%%%%
-devrituran = {\time 7/8 \devrituranbeams }
+devrituran = {\time 7/8 \devrituranbeams \SpacingSectionTWEAK}
 
 devrituranbarsUsul = {
   \time 7/8 s2 \nibar "!" s4. \nibar ""
@@ -1193,7 +1209,7 @@ devrituranPatternVelOne = {
 }
 
 %%%%%%%%%%% duyek %%%%%%%%%%%%%
-duyek = { \time 8/8 \duyekbeams }
+duyek = { \time 8/8 \duyekbeams \SpacingSectionTWEAK}
 
 duyekbars = {
   s2 \nibar "!" s2 \nibar "|"
@@ -1217,7 +1233,7 @@ duyekPatternVelOne = {
 }
 
 %%%%%%%%%%% musemmen %%%%%%%%%%%%%
-musemmen = { \time 8/8 \musemmenbeams }
+musemmen = { \time 8/8 \musemmenbeams \SpacingSectionTWEAK}
 
 musemmenbarsUsul = {
 
@@ -1238,7 +1254,7 @@ musemmenPatternVelOne = {
 }
 
 %%%%%%%%%%% evsat %%%%%%%%%%%%%
-evsat = {\time 26/8 \evsatbeams }
+evsat = {\time 26/8 \evsatbeams \SpacingSectionTWEAK}
 
 evsatbars = {
   s8*5 \nibar "!"
@@ -1259,7 +1275,7 @@ evsatPattern = {
 }
 
 %%%%%%%%%%% lenkfahte %%%%%%%%%%%%%
-lenkfahte = {\time 10/4 \SenginSemaibeams }
+lenkfahte = {\time 10/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 lenkfahtebars = {
   s4*6 \nibar "!"
@@ -1314,7 +1330,7 @@ lenkfahtePatternVelTwo = {
 }
 
 %%%%%%%%%%% fahte %%%%%%%%%%%%%
-fahte = {\time 20/4 \SenginSemaibeams }
+fahte = {\time 20/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 xfahtebars = {
   s1 \nibar "!"
@@ -1389,6 +1405,7 @@ agirfahte = {
                                 (                       ;start of alist of end points
                                                         ((1 . 8) . (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2))   ;
                                                         )))                     %close all entries
+ \SpacingSectionTWEAK
 }
 
 agirfahtebars = {
@@ -1425,7 +1442,7 @@ agirfahtePattern = {
 }
 
 %%%%%%%%%%% hafif %%%%%%%%%%%%%
-hafif = {\time 32/4 \sofyanbeams }
+hafif = {\time 32/4 \sofyanbeams \SpacingSectionTWEAK}
 
 hafifbars = {
   \repeat unfold 7 {s1 \nibar "!" }
@@ -1481,8 +1498,35 @@ hafifPatternVelOne = {
   }
 }
 
+%%%%%%%%%%% agirhafif %%%%%%%%%%%%%
+agirhafif = {\time 32/2 \agirsofyanbeams \SpacingSectionTWEAK}
+
+agirhafifbars = {
+  \repeat unfold 7 {s1 s1 \nibar "!" }
+  s1 s1 \nibar "|"
+}
+
+agirhafifbarsUsul = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text =
+        #(compound-time-parentheses "32" "4" "4" )
+  \repeat unfold 7 {\time 4/4 s1 \nibar "!" } \time 4/4 s1 \nibar ""
+}
+
+agirhafifPatternOne = {
+  \drummode {
+    \repeat unfold 2 {\stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK}
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \stemUp kdl4^\DUM \stemDown kdh4_\TEK \stemDown kdh2_\TEK
+    \stemUp kdl2^\DUM \stemUp kdl4^\TE \stemDown kdh4_\KE
+    \repeat unfold 3 {\stemUp kdl4^\DUM \stemDown kdh4_\TEK}
+    \repeat unfold 2 {\stemUp kdl4^\DUM}
+    \stemDown kdh2_\TEK
+    \stemUp kdl4^\TE \stemDown kdh4_\KE
+  }
+}
 %%%%%%%%%%% havi %%%%%%%%%%%%%
-havi = {\time 64/4 \SenginSemaibeams }
+havi = {\time 64/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 havibars = {
   \repeat unfold 2 {s1 \nibar "!" }
@@ -1511,7 +1555,7 @@ haviPattern = {
 }
 
 %%%%%%%%%%% karsilama %%%%%%%%%%%%%
-karsilama = {\time 9/8 \zeybekbeams }
+karsilama = {\time 9/8 \zeybekbeams \SpacingSectionTWEAK}
 
 karsilamaPattern = {
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
@@ -1520,7 +1564,7 @@ karsilamaPattern = {
 
 
 %%%%%%%%%%% oynak %%%%%%%%%%%%%
-oynak = {\time 9/8 \oynakbeams }
+oynak = {\time 9/8 \oynakbeams \SpacingSectionTWEAK}
 
 oynakPattern = {
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
@@ -1528,7 +1572,7 @@ oynakPattern = {
 }
 
 %%%%%%%%%%% muhammes %%%%%%%%%%%%%
-muhammes = {\time 32/4 \sofyanbeams}
+muhammes = {\time 32/4 \sofyanbeams \SpacingSectionTWEAK}
 
 muhammesbars = {
   \repeat unfold 7 {s1 \nibar "!" } s1 \nibar "|"
@@ -1571,7 +1615,7 @@ muhammesPatternVelOne = {
 }
 
 %%%%%%%%%%% muhammessixteentwo %%%%%%%%%%%%%
-muhammessixteentwo = {\time 16/2 \SixteenTwobeams}
+muhammessixteentwo = {\time 16/2 \SixteenTwobeams \SpacingSectionTWEAK}
 
 muhammessixteentwobars = {
   \repeat unfold 3 {s4*8 \nibar "!" } s4*8 \nibar "|"
@@ -1594,7 +1638,7 @@ muhammessixteentwoPattern = {
 }
 
 %%%%%%%%%%% muhammessixteenfour %%%%%%%%%%%%%
-muhammessixteenfour = {\time 16/4 \sofyanbeams}
+muhammessixteenfour = {\time 16/4 \sofyanbeams \SpacingSectionTWEAK}
 
 muhammessixteenfourbars = {
   \repeat unfold 3 {s4*4 \nibar "!" } s1 \nibar "|"
@@ -1617,7 +1661,7 @@ muhammessixteenfourPattern = {
 }
 
 %%%%%%%%%%% nimsakil %%%%%%%%%%%%%
-nimsakil = {\time 24/4 \SenginSemaibeams}
+nimsakil = {\time 24/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 nimsakilbars = {
   s1 \nibar "!"
@@ -1643,7 +1687,7 @@ nimsakilPattern = {
 }
 
 %%%%%%%%%%% remel %%%%%%%%%%%%%
-remel = {\time 28/2 \SixTwobeams}
+remel = {\time 28/2 \SixTwobeams \SpacingSectionTWEAK}
 
 remelbars = {
   s4*8 \nibar "!"
@@ -1671,7 +1715,7 @@ remelPattern = {
 }
 
 %%%%%%%%%%% remelfour %%%%%%%%%%%%%
-remelfour = {\time 28/4 \SenginSemaibeams}
+remelfour = {\time 28/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 remelfourbars = {
   s1 \nibar "!"
@@ -1698,7 +1742,7 @@ remelfourPattern = {
 }
 
 %%%%%%%%%%% sakil %%%%%%%%%%%%%
-sakil = {\time 48/4 \SenginSemaibeams}
+sakil = {\time 48/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 sakilbars = {
   % 4 6 4 6 6 6 4 4 4 4
@@ -1730,7 +1774,7 @@ sakilPattern = {
 }
 
 %%%%%%%%%%% semai %%%%%%%%%%%%%
-semai = {\time 3/4 \semaibeams}
+semai = {\time 3/4 \semaibeams \SpacingSectionTWEAK}
 
 semaibarsUsul = {
   \time 3/4 s2. \nibar ""
@@ -1743,7 +1787,7 @@ semaiPatternOne = {
 }
 
 %%%%%%%%%%% SenginSemai %%%%%%%%%%%%%
-SenginSemai = {\time 6/4 \SenginSemaibeams }
+SenginSemai = {\time 6/4 \SenginSemaibeams \SpacingSectionTWEAK}
 
 SenginSemaiEight = {\time 6/8 \SenginSemaiEightbeams }
 
@@ -1755,7 +1799,7 @@ SenginSemaiPattern = {
 }
 
 %%%%%%%%%%% nim sofyan %%%%%%%%%%%%%
-nimsofyan = {\time 2/4  }
+nimsofyan = {\time 2/4 \SpacingSectionTWEAK}
 
 nimsofyanbarsUsul = {
   \time 2/4 s2 \nibar ""
@@ -1768,7 +1812,7 @@ nimsofyanPatternOne = {
 }
 
 %%%%%%%%%%% sofyan %%%%%%%%%%%%%
-sofyan = {\numericTimeSignature \time 4/4 \sofyanbeams }
+sofyan = {\numericTimeSignature \time 4/4 \sofyanbeams \SpacingSectionTWEAK}
 
 sofyanbarsUsul = {
   \time 4/4 s1 \nibar ""
@@ -1788,7 +1832,7 @@ sofyanPatternVelOne = {
 }
 
 %%%%%%%%%%% turksaksagi %%%%%%%%%%%%%
-turkaksagi = {\time 5/8 \turkaksagibeams }
+turkaksagi = {\time 5/8 \turkaksagibeams \SpacingSectionTWEAK}
 
 turkaksagibars = { s2. \bar "|" }
 
@@ -1810,7 +1854,7 @@ turkaksagiPatternVelOne = {
 }
 
 %%%%%%%%%%% YurukSemai %%%%%%%%%%%%%
-YurukSemai = {\time 6/8 \YurukSemaibeams }
+YurukSemai = {\time 6/8 \YurukSemaibeams \SpacingSectionTWEAK}
 
 YurukSemaibarsUsul = {
   \time 6/8 s4. \nibar "!" s4. \nibar ""
@@ -1833,6 +1877,7 @@ YurukSemaiPatternVelOne = {
 %%%%%%%%%%% zencir %%%%%%%%%%%%%
 zencir = {
   \time 120/4 \set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
+ \SpacingSectionTWEAK
 }
 
 zencirPatternVel = {
@@ -1846,7 +1891,7 @@ zencirPatternVel = {
 }
 
 %%%%%%%%%%% zeybek %%%%%%%%%%%%%
-zeybek = {\time 9/8 \zeybekbeams }
+zeybek = {\time 9/8 \zeybekbeams \SpacingSectionTWEAK}
 
 zeybekPattern = {
   \stemUp d4^\DUM \stemDown b_\TEK b_\TEK \bar "|"
@@ -1856,7 +1901,7 @@ zeybekPattern = {
 agirzeybek = {\time 9/4 \agirzeybekbeams }
 
 %%%%%%%%%%% darbeyn %%%%%%%%%%%%%
-darbeyn = { \SixTwobeams }
+darbeyn = { \SixTwobeams \SpacingSectionTWEAK}
 
 darbeynbars = {
   \time 28/2
