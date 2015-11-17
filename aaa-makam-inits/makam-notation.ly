@@ -203,7 +203,7 @@ SpanTextUp = #(define-music-function (parser location spantext) (string?)
     #'(bound-details left stencil-align-dir-y) = #CENTER
 \once \override TextSpanner #'(bound-details right text) =
     \markup { \draw-line #'(0 . -1) }
-\once \override TextSpanner #'(bound-details right padding) = #-1
+\once \override TextSpanner #'(bound-details right padding) = #0
 \once \override TextSpanner #'font-shape = #'italic
 #})
 

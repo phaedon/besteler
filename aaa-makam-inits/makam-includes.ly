@@ -4,6 +4,6 @@
 
 \include "usul-notation.ly"
 
-\include "makam-paper-settings_letter.ly"
+\include "makam-paper-settings_letterALL.ly"
 
 \include "makam-text.ly"

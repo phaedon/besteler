@@ -37,21 +37,25 @@ date = #(strftime "%d.%m.%Y" (localtime (current-time)))
   %#(set-paper-size "letter")
   %#(set-default-paper-size "letter" 'landscape)
   
-  
-    %line-width = 184.15\mm
-    line-width = 188.00\mm %for Letter
-    %paper-width = 184.15\mm
-    paper-width = 188.00\mm %for Letter
-    %paper-height =  224\mm %for Letter
-    paper-height =  260\mm
+  %%% a point (pt) is about 0.0138 inch or 0.3515 mm 
+  %%% 534.850640114\pt would be 188mm for line-width
+  %%% 739.687055477\pt would be 260mm for paper-height
+    line-width = 534.00\pt %for Letter
+    paper-width = 534.00\pt %for Letter
+    paper-height =  700\pt
 
-    top-margin = 0\mm
+    %line-width = 188.00\mm %for Letter
+    %paper-width = 188.00\mm %for Letter
+    %paper-height =  260\mm
+
+    top-margin = 0\mm % 5/mm default
+    bottom-margin = 4\mm % 6/mm default
     page-top-space = 0\mm
     before-title-space = 0\mm
     left-margin = 0.0\mm
     right-margin = 0.0\mm
-    head-separation = 4\mm %default is 4\mm
-    foot-separation = 0\mm %default is 4\mm
+    %head-separation = 4\mm %default is 4\mm
+    %foot-separation = 0\mm %default is 4\mm
   
 
   oddFooterMarkup=##f
