@@ -134,7 +134,7 @@ parenthR = \markup { \rotate #180 \parenthL }
 %% BEAMING
 Aksakbeams = {
   % BEAMING FOR 9/8
-  \set Timing.beatStructure = #'(2 2 2 3)
+  \set Timing.beatStructure = #'(2 2 2 2 1)
   \set Timing.beamExceptions =
   #'(                         ;start of alist
                               (end .                   ;entry for end of beams
