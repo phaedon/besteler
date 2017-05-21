@@ -136,6 +136,26 @@ CustomSegnoBox = #(define-music-function (parser location markp marktext) (strin
       \hspace #0.2 \raise #-1.5 \bold \box $markp \hspace #0.2 \raise #-1.5 $marktext }
 #})
 
+CustomCoda = #(define-music-function (parser location markp marktext) (string? string?) 
+  #{ 
+    \once \override Score.RehearsalMark #'break-align-symbols = #'(clef)
+    \once \override Score.RehearsalMark #'X-offset = #0.0
+    \once \override Score.RehearsalMark #'Y-offset = #2.0
+    \once \override Score.RehearsalMark #'font-size = #'0.0
+    \mark \markup {\normalsize \musicglyph #"scripts.coda"
+      \hspace #0.2 \raise #-1.5 $markp \hspace #0.2 \raise #-1.5 \italic $marktext }
+#})
+
+CustomCodaBox = #(define-music-function (parser location markp marktext) (string? string?) 
+  #{ 
+    \once \override Score.RehearsalMark #'break-align-symbols = #'(clef)
+    \once \override Score.RehearsalMark #'X-offset = #0.0
+    \once \override Score.RehearsalMark #'Y-offset = #2.0
+    \once \override Score.RehearsalMark #'font-size = #'0.0
+    \mark \markup {\normalsize \musicglyph #"scripts.coda"
+      \hspace #0.2 \raise #-1.5 \bold \box $markp \hspace #0.2 \raise #-1.5 $marktext }
+#})
+
 % Function to print a break after a specific number of beats
 breakafter = #(define-music-function (parser location count beats) (integer? ly:music?)
   #{
@@ -237,6 +257,17 @@ SpanTextDown = #(define-music-function (parser location spantext) (string?)
 \once \override TextSpanner #'(bound-details right padding) = #-1
 \once \override TextSpanner #'font-shape = #'italic
 #})
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MISC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+rs = {
+  \once \override Rest #'stencil = #ly:percent-repeat-item-interface::beat-slash
+  \once \override Rest #'thickness = #0.48
+  \once \override Rest #'slope = #1.7
+  r4
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TRANSPOSITION DEFINITIONS

@@ -244,6 +244,17 @@ AksakBeams = {
           )))                     %close all entries
 }
 
+TamzaraBeams = {
+  % BEAMING FOR 9/8
+  \set Timing.beatStructure = #'(2 2 2 1 2)
+  \set Timing.beamExceptions =
+  #'(                         ;start of alist
+      (end .                   ;entry for end of Beams
+        (                       ;start of alist of end points
+          ((1 . 16) . (4 4 4 4 2))   ;rule for 1/32 Beams -- end each 1/16
+          )))                     %close all entries
+}
+
 EvferBeams = {
   % BEAMING FOR 9/8
   \set Timing.beatStructure = #'(2 2 2 3)
@@ -685,6 +696,9 @@ AksakPatternVelOne = {
     \stemDown kdh4_\TEK kdh16_\TE kdh_\KE
   }
 }
+
+%%%%%%%%%%% Tamzara %%%%%%%%%%%%%
+Tamzara = {\time 9/8 \TamzaraBeams }
 
 %%%%%%%%%%% Karsilama %%%%%%%%%%%%%
 Karsilama = {\time 9/8 \ZeybekBeams }
@@ -1557,6 +1571,18 @@ HafifPatternVelOne = {
     \stemDown <kdh kdl>4_\HEK \stemDown kdh8_\TE \stemDown kdh_\KE
     \repeat unfold 4 {\stemDown kdh4_\TEK \stemDown kdh_\KA}
   }
+}
+
+%%%%%%%%%%% HafifEight %%%%%%%%%%%%%
+HafifEight = {
+  \time 32/8
+    \set Timing.beatStructure = #'(2 2 2 2 2 2 2 2)
+        
+}
+
+HafifEightBars = {
+  s8*16 \nibar "!"
+  s8*16 \nibar "|"
 }
 
 %%%%%%%%%%% Muhammes %%%%%%%%%%%%%
